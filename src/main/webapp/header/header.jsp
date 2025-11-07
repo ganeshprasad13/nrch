@@ -154,8 +154,8 @@
             <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">About Us</a>
             <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
               <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
-              <li><a class="dropdown-item" href="/nrch/AboutUs/organization.jsp">Organization</a></li>
-              <li><a class="dropdown-item" href="/nrch/AboutUs/aarogya.jsp">Aarogya - The Times of NRCH</a></li>
+              <li><a class="dropdown-item" href="/nrch/about_us/organization.jsp">Organization</a></li>
+              <li><a class="dropdown-item" href="/nrch/about_us/aarogya.jsp">Aarogya - The Times of NRCH</a></li>
             </ul>
           </li>
 
