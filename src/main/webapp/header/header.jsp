@@ -110,61 +110,62 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container">
-    <a class="navbar-brand d-lg-none" href="#">NRCH</a>
+    <div class="container">
+      <a class="navbar-brand d-lg-none" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">About Us</a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
+              <li><a class="dropdown-item" href="#">Organization</a></li>
+              <li><a class="dropdown-item" href="#">Aarogya - The Times of NRCH</a></li>
+            </ul>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="departmentsDropdown" role="button" data-bs-toggle="dropdown">Departments</a>
+            <ul class="dropdown-menu" aria-labelledby="departmentsDropdown">
+              <li><a class="dropdown-item" href="#">Surgery</a></li>
+              <li><a class="dropdown-item" href="#">Orthopaedics</a></li>
+              <li><a class="dropdown-item" href="#">Obstetrics & Gynaecology</a></li>
+              <li><a class="dropdown-item" href="#">Anesthesiology</a></li>
+              <li><a class="dropdown-item" href="#">Medicine</a></li>
+              <li><a class="dropdown-item" href="#">Paediatrics</a></li>
+              <li><a class="dropdown-item" href="#">ENT</a></li>
+              <li><a class="dropdown-item" href="#">Ophthalmology</a></li>
+              <li><a class="dropdown-item" href="#">Pathology</a></li>
+              <li><a class="dropdown-item" href="#">Microbiology</a></li>
+              <li><a class="dropdown-item" href="#">Radiodiagnosis</a></li>
+              <li><a class="dropdown-item" href="#">Dermatology</a></li>
+              <li><a class="dropdown-item" href="#">Oncology</a></li>
+              <li><a class="dropdown-item" href="#">Dental Surgery</a></li>
+              <li><a class="dropdown-item" href="#">Psychiatry</a></li>
+              <li><a class="dropdown-item" href="#">Blood Centre</a></li>
+            </ul>
+          </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="Overview.jsp">Overview</a></li>
-            <li><a class="dropdown-item" href="#">Mission & Vision</a></li>	
-            <li><a class="dropdown-item" href="#">Administration</a></li>
-          </ul>
-        </li>
+          <li class="nav-item"><a class="nav-link" href="#">Admission</a></li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Departments</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Cardiology</a></li>
-            <li><a class="dropdown-item" href="#">Orthopedics</a></li>
-            <li><a class="dropdown-item" href="#">Radiology</a></li>
-            <li><a class="dropdown-item" href="#">Emergency</a></li>
-          </ul>
-        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="studentZoneDropdown" role="button" data-bs-toggle="dropdown">Student Zone</a>
+            <ul class="dropdown-menu" aria-labelledby="studentZoneDropdown">
+              <li><a class="dropdown-item" href="#">Courses</a></li>
+              <li><a class="dropdown-item" href="#">Admission</a></li>
+              <li><a class="dropdown-item" href="#">Examination</a></li>
+            </ul>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Admission</a>
-        </li>
+          <li class="nav-item"><a class="nav-link" href="#">Circulars & Notifications</a></li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Student Zone</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Courses</a></li>
-            <li><a class="dropdown-item" href="#">Schedules</a></li>
-            <li><a class="dropdown-item" href="#">Results</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Circulars & Notifications</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
-        </li>
-
-      </ul>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
