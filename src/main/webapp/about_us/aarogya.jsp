@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aarogya - The Times of NRCH</title>
+  <title>Overview – Department of Pediatrics | NRCH</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -70,13 +70,13 @@
 
     /* Content Section */
     .content-section {
-      padding: 60px 15px;
+      padding: 25px 15px;
       display: flex;
       justify-content: center;
     }
 
     .card-overview {
-     
+      
       background: #fff;
       border: none;
       border-radius: 12px;
@@ -121,7 +121,6 @@
 }
   </style>
 </head>
-
 <body>
   <%@ include file="/header/header.jsp" %> 
 
