@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Department of Surgery | NRCH</title>
-
+  <title>Overview – Department of Pediatrics | NRCH</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -14,16 +12,17 @@
       color: #333;
     }
 
-    /* HERO SECTION */
+    /* Hero Section */
     .hero-section {
       position: relative;
-      background: url('images/Bck2.jpg') center/cover no-repeat;
+      background: url('../images/Bck2.jpg') center/cover no-repeat;
       color: #fff;
       text-align: center;
       padding: 80px 15px;
       overflow: hidden;
     }
 
+    /* Blur effect layer */
     .hero-section::before {
       content: "";
       position: absolute;
@@ -34,6 +33,7 @@
       z-index: 0;
     }
 
+    /* Semi-transparent overlay for better contrast */
     .hero-section::after {
       content: "";
       position: absolute;
@@ -68,9 +68,9 @@
       color: #fff;
     }
 
-    /* MAIN CONTENT AREA */
+    /* Content Section */
     .content-section {
-      padding: 60px 15px;
+      padding: 25px 15px;
       display: flex;
       justify-content: center;
     }
@@ -99,24 +99,28 @@
       margin-bottom: 25px;
     }
 
-    .card-overview p, 
-    .card-overview ul {
+    .card-overview p, .card-overview ul {
       line-height: 1.8;
-      font-size: 15px;
+      text-align: justify;
     }
 
     .card-overview ul {
       margin-left: 20px;
     }
 
-    #ntext img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin: 15px 0;
+    .overview-img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
+    .content-section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
   </style>
 </head>
-
 <body>
 
 <!-- Header include -->
@@ -127,10 +131,7 @@
   <div class="hero-content">
     <h1>Department of Surgery</h1>
     <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.jsp">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Surgery</li>
-      </ol>
+      
     </nav>
   </div>
   </section>
@@ -161,13 +162,7 @@
         <img src="https://nr.indianrailways.gov.in//uploads/images/1761117950687-Anaesthesia Schedule.png" alt="Anaesthesia Schedule" style="max-width:100%; border-radius:8px;">
       </div>
       
-      <div align="right">
-        <a href="#" class="linkn"><img src="images/top.gif" height="10" align="right" border="0"></a><br>
-        <span class="font_12px" style="font-family:tahoma;color:black">
-          <b>Source :</b> Northern Railways / Indian Railways Portal CMS Team Last Reviewed : 27-10-2025 &nbsp;
-          <img src="images/sourceiconw.gif" alt="Source Icon">
-        </span>
-      </div>
+      
     </div>
   </div>
 

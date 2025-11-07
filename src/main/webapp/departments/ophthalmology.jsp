@@ -70,7 +70,7 @@
 
     /* Content Section */
     .content-section {
-      padding: 60px 15px;
+      padding: 25px 15px;
       display: flex;
       justify-content: center;
     }

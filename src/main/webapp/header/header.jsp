@@ -126,7 +126,9 @@
 <header class="main-header">
   <div class="container d-flex justify-content-between align-items-center">
     <div class="d-flex align-items-center">
-      <img src="/nrch/images/emblem.png" alt="Logo" class="main-logo">
+      <a href="/nrch">
+	  <img src="/nrch/images/emblem.png" alt="Logo" class="main-logo">
+	</a>
       <h1 class="h4 mb-0">
 	  Indian Railway Post Graduate <br>
 	  Institute of Medical Sciences and Research
@@ -148,7 +150,7 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/nrch">Home</a></li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">About Us</a>

@@ -12,48 +12,43 @@
       color: #333;
     }
    .hero-section {
-  position: relative;
-  background: url('images/Bck2.jpg') center/cover no-repeat;
-  color: #fff;
-  text-align: center;
-  padding: 80px 15px;
-  overflow: hidden;
-}
+      position: relative;
+      background: url('../images/Bck2.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 80px 15px;
+      overflow: hidden;
+    }
 
-/* Blur effect layer */
-.hero-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url('images/Bck2.png') center/cover no-repeat;
-  filter: blur(6px);
-  transform: scale(1.1);
-  z-index: 0;
-}
+    /* Blur effect layer */
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url('images/Bck2.png') center/cover no-repeat;
+      filter: blur(6px);
+      transform: scale(1.1);
+      z-index: 0;
+    }
 
-/* Semi-transparent overlay for better contrast */
-.hero-section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 64, 128, 0.5);
-  z-index: 1;
-}
+    /* Semi-transparent overlay for better contrast */
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 64, 128, 0.5);
+      z-index: 1;
+    }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
 
     .hero-section h1 {
       font-size: 2.5rem;
       font-weight: bold;
       margin-bottom: 15px;
-    }
-    .breadcrumb {
-      background: transparent;
-      justify-content: center;
-      margin-bottom: 0;
     }
     .breadcrumb-item a {
       color: #ffd700;
