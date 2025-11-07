@@ -8,6 +8,7 @@
 	  <title>Northern Railway Central Hospital</title>
 	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	  <style>
+	  
 	    
 	    .news-bar {
 	  background-color: #003366;
@@ -97,7 +98,7 @@
 	  <!-- Latest News Bar -->
 	  <div class="news-bar">
 	  <div class="container d-flex align-items-center overflow-hidden">
-	    <strong class="me-2 flex-shrink-0">Latest News:</strong>
+	    <strong class="me-2 flex-shrink-0 text-warning">Latest News:</strong>
 	    <marquee behavior="scroll" direction="left" scrollamount="5" class="flex-grow-1 mb-0">
 	      Admission forms for 2025 session are now open! &nbsp;&nbsp;|&nbsp;&nbsp;
 	      New MRI machine installed in Radiology Department. &nbsp;&nbsp;|&nbsp;&nbsp;
@@ -110,7 +111,7 @@
 	  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
 	    <div class="carousel-inner">
 	      <div class="carousel-item active">
-	        <img src="images/banner1.jpg" class="d-block w-100" alt="Hospital Banner 1">
+	        <img src="images/banner1.jpg" class="d-block w-100" alt="Hospital Banner 1" height="450px">
 	      </div>
 	    </div>
 	    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
@@ -207,31 +208,8 @@
 	<!-- footer start-->
 	<%@ include file="header/footer.jsp" %>
 	<!-- footer end-->
-	
-	
-	
-	
-	  <!-- Date and Time Script -->
-	  <script>
-	    function updateDateTime() {
-	      const now = new Date();
-	      const options = {
-	        weekday: 'short',
-	        month: 'short',
-	        day: '2-digit',
-	        year: 'numeric',
-	        hour: '2-digit',
-	        minute: '2-digit',
-	        second: '2-digit',
-	        hour12: true
-	      };
-	      let formatted = now.toLocaleString('en-US', options);
-	      formatted = formatted.replace(/, (?=[^,]*$)/, ' | ');
-	      document.getElementById('datetime').textContent = formatted;
-	    }
-	    setInterval(updateDateTime, 1000);
-	    updateDateTime();
-	  </script>
+
+	 
 	
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	</body>

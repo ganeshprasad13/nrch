@@ -100,18 +100,7 @@
 <body>
  <%@ include file="header/header.jsp" %> 
   <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container hero-content">
-      <h1>Overview : Child Development Centre (CDC)</h1>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb justify-content-center">
-          
-          <li class="breadcrumb-item"><a href="#">College</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Overview</li>
-        </ol>
-      </nav>
-    </div>
-  </section>
+  
 
   <!-- Main Content -->
   <section class="content-section">

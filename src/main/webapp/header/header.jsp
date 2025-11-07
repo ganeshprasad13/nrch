@@ -1,10 +1,37 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
+ <script>
+	    function updateDateTime() {
+	      const now = new Date();
+	      const options = {
+	        weekday: 'short',
+	        month: 'short',
+	        day: '2-digit',
+	        year: 'numeric',
+	        hour: '2-digit',
+	        minute: '2-digit',
+	        second: '2-digit',
+	        hour12: true
+	      };
+	      let formatted = now.toLocaleString('en-US', options);
+	      formatted = formatted.replace(/, (?=[^,]*$)/, ' | ');
+	      document.getElementById('datetime').textContent = formatted;
+	    }
+	    setInterval(updateDateTime, 1000);
+	    updateDateTime();
+	  </script>
 <style>
+	.top-header a {
+	  color: white;
+	  text-decoration: none;
+	}
+	
   .top-header {
-    background-color: #f8f9fa;
+    background-color: #003366;
+	color: white;
+	font-weight: 500;
+	white-space: nowrap;
     font-size: 0.9rem;
-    padding: 5px 0;
+    padding: 5px 0; */
   }
   .main-header {
     background-color: #ffffff;
@@ -88,10 +115,10 @@
   <div class="container d-flex justify-content-between align-items-center">
     <div id="datetime"></div>
     <div>
-      <a href="#" class="text-decoration-none text-dark me-3">Facebook</a>
-      <a href="#" class="text-decoration-none text-dark me-3">Twitter</a>
-      <a href="#" class="text-decoration-none text-dark">Instagram</a>
-    </div>
+     <a href="#" class="text-decoration-none text-white me-3">Facebook</a>
+	 <a href="#" class="text-decoration-none text-white me-3">Twitter</a>
+	 <a href="#" class="text-decoration-none text-white">Instagram</a>
+	</div>
   </div>
 </div>
 
@@ -99,11 +126,14 @@
 <header class="main-header">
   <div class="container d-flex justify-content-between align-items-center">
     <div class="d-flex align-items-center">
-      <img src="images/emblem.png" alt="Logo" class="main-logo">
-      <h1 class="h4 mb-0">Northern Railway Central Hospital</h1>
-    </div>
+      <img src="/nrch/images/emblem.png" alt="Logo" class="main-logo">
+      <h1 class="h4 mb-0">
+	  Indian Railway Post Graduate <br>
+	  Institute of Medical Sciences and Research
+	</h1>
+    </div>	
     <div>
-      <img src="images/logo.gif" alt="Right Logo" class="right-logo">
+      <img src="/nrch/images/logo.gif" alt="Right Logo" class="right-logo">
     </div>
   </div>
 </header>
@@ -124,30 +154,30 @@
             <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">About Us</a>
             <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
               <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
-              <li><a class="dropdown-item" href="#">Organization</a></li>
-              <li><a class="dropdown-item" href="#">Aarogya - The Times of NRCH</a></li>
+              <li><a class="dropdown-item" href="/nrch/AboutUs/organization.jsp">Organization</a></li>
+              <li><a class="dropdown-item" href="/nrch/AboutUs/aarogya.jsp">Aarogya - The Times of NRCH</a></li>
             </ul>
           </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="departmentsDropdown" role="button" data-bs-toggle="dropdown">Departments</a>
             <ul class="dropdown-menu" aria-labelledby="departmentsDropdown">
-              <li><a class="dropdown-item" href="#">Surgery</a></li>
-              <li><a class="dropdown-item" href="#">Orthopaedics</a></li>
-              <li><a class="dropdown-item" href="#">Obstetrics & Gynaecology</a></li>
-              <li><a class="dropdown-item" href="#">Anesthesiology</a></li>
-              <li><a class="dropdown-item" href="#">Medicine</a></li>
-              <li><a class="dropdown-item" href="#">Paediatrics</a></li>
-              <li><a class="dropdown-item" href="#">ENT</a></li>
-              <li><a class="dropdown-item" href="#">Ophthalmology</a></li>
-              <li><a class="dropdown-item" href="#">Pathology</a></li>
-              <li><a class="dropdown-item" href="#">Microbiology</a></li>
-              <li><a class="dropdown-item" href="#">Radiodiagnosis</a></li>
-              <li><a class="dropdown-item" href="#">Dermatology</a></li>
-              <li><a class="dropdown-item" href="#">Oncology</a></li>
-              <li><a class="dropdown-item" href="#">Dental Surgery</a></li>
-              <li><a class="dropdown-item" href="#">Psychiatry</a></li>
-              <li><a class="dropdown-item" href="#">Blood Centre</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/surgery.jsp">Surgery</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/orthopaedics.jsp">Orthopaedics</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/gynaecology.jsp">Obstetrics & Gynaecology</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/anesthesiology.jsp">Anesthesiology</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/medicine.jsp">Medicine</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/paediatrics.jsp">Paediatrics</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/ent.jsp">ENT</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/ophthalmology.jsp">Ophthalmology</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/pathology.jsp">Pathology</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/microbiology.jsp">Microbiology</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/radiodiagnosis.jsp">Radiodiagnosis</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/dermatology.jsp">Dermatology</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/oncology.jsp">Oncology</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/dentalsurgery.jsp">Dental Surgery</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/psychiatry.jsp">Psychiatry</a></li>
+              <li><a class="dropdown-item" href="/nrch/departments/bloodcentre.jsp">Blood Centre</a></li>
             </ul>
           </li>
 
