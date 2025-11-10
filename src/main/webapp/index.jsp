@@ -21,7 +21,6 @@
 	
 	
 	.modern-card {
-	  border: none;
 	  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 	  border-radius: 12px;
 	  transition: transform 0.3s ease, box-shadow 0.3s ease;
