@@ -10,17 +10,16 @@
 	  <style>
 	  
 	    
-	    .news-bar {
+	.news-bar {
 	  background-color: #003366;
 	  color: white;
 	  padding: 6px 0;
 	  font-weight: 500;
 	  font-size: 0.95rem;
-	  white-space: nowrap; /* ensures it stays on one line */
+	  white-space: nowrap; 
 	}
 	
 	
-	/* Person Cards */
 	.modern-card {
 	  border: none;
 	  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
@@ -56,17 +55,12 @@
 	    max-width: 40%;
 	  }
 	}
-	
-	/* Slightly smaller circular images */
-	
-	/* --- Enhanced Person Cards --- */
-	
-	
-	  .card img {
+	/*   .card img {
 	  object-fit: cover;
 	  border: 2px solid #dee2e6;
 	}
-	
+	 */
+	 
 	.card h6 {
 	  color: #0d47a1;
 	  font-size: 1rem;
@@ -83,31 +77,31 @@
 	li{
 	font-weight: bold;
 	}
-.bottom-section {
-  background-color: #ffffff;
-  border-top: 2px solid #d0d0d0;
-}
+	.bottom-section {
+	  background-color: #ffffff;
+	  border-top: 2px solid #d0d0d0;
+	}
+	
+	.bottom-section p {
+	  line-height: 1.8;
+	  font-size: 1.05rem;
+	  color: #333333; /* darker paragraph text */
+	}
+	
+	.read-more-btn {
+	  color: #0d47a1;
+	  font-weight: 600;
+	  text-decoration: none;
+	  border-bottom: 2px solid transparent;
+	  transition: all 0.3s ease;
+	}
+	
+	.read-more-btn:hover {
+	  color: #003c8f;
+	  border-bottom: 2px solid #0d47a1;
+	}
 
-.bottom-section p {
-  line-height: 1.8;
-  font-size: 1.05rem;
-  color: #333333; /* darker paragraph text */
-}
-
-.read-more-btn {
-  color: #0d47a1;
-  font-weight: 600;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
-}
-
-.read-more-btn:hover {
-  color: #003c8f;
-  border-bottom: 2px solid #0d47a1;
-}
-
-.read-more-btn {
+	.read-more-btn {
 	  color: #0d47a1;
 	  font-weight: 600;
 	  text-decoration: none;
@@ -140,9 +134,10 @@
 	.circle-link:hover p {
 	  color: #0d6efd;
 	}
-	/* ✅ Circular Quick Links Section (Final Look) */
+	
+	
 	.circular-links {
-	  background-color: #e8f4ff; /* Light blue background behind circles */
+	  background-color: #e8f4ff;
 	  padding-top: 2rem;
 	  padding-bottom: 2rem;
 	  border-top: 2px solid #cfe7ff;
@@ -163,8 +158,8 @@
 	  border-radius: 50%;
 	  border: 3px solid #004080;
 	  padding: 10px;
-	  /* 🔶 Gradient orange background with glossy highlight */
-	  background: radial-gradient(circle at 30% 30%, #ffd699, #ffb74d);
+	  
+	  background: radial-gradient(circle at 30% 30%, #ffd699, #496de1);
 	  transition: all 0.3s ease;
 	  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* subtle outer shadow */
 	  position: relative;
@@ -199,18 +194,18 @@
 	  transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
 	
-	.person-card:hover {
+	/* .person-card:hover {
 	  transform: translateY(-5px);
 	  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-	}
+	} */
 	
 	/* Profile Image Styling */
-		.person-img {
+	.person-img {
 		  width: 110px;
 		  height: 110px;
-		  object-fit: contain;
+		  object-fit: fill;
 		  border-radius: 50%;
-		  border: 3px solid #004080;
+		  border: 2px solid #004080;
 		   /* ✨ subtle outer glow */
 		  transition: all 0.3s ease;
 		  position: relative;
@@ -218,13 +213,13 @@
 		}
 	
 	/* Hover zoom effect on image */
-	.person-card:hover .person-img {
+	/* .person-card:hover .person-img {
 	  transform: scale(1.1);
 	 
-	}
+	} */
 	
 	/* Text overlay effect (hidden by default) */
-	.person-card .person-overlay {
+	/* .person-card .person-overlay {
 	  position: absolute;
 	  top: 0;
 	  left: 0;
@@ -241,13 +236,13 @@
 	  text-align: center;
 	  font-size: 0.9rem;
 	  font-weight: 600;
-	}
+	} */
 	
 	/* Show overlay text on hover */
-	.person-card:hover .person-overlay {	
+	/* .person-card:hover .person-overlay {	
 	  opacity: 1;
 	  
-	}
+	} */
 	    
 	    
 	    </style>
@@ -266,9 +261,9 @@
 	  <div class="container d-flex align-items-center overflow-hidden">
 	    <strong class="me-2 flex-shrink-0 text-warning">Latest News:</strong>
 	    <marquee behavior="scroll" direction="left" scrollamount="5" class="flex-grow-1 mb-0">
-	      Admission forms for 2025 session are now open! &nbsp;&nbsp;|&nbsp;&nbsp;
-	      New MRI machine installed in Radiology Department. &nbsp;&nbsp;|&nbsp;&nbsp;
-	      Blood donation camp scheduled for 12th November.
+	      Latest New 1! &nbsp;&nbsp;|&nbsp;&nbsp;
+	      Latest New 2. &nbsp;&nbsp;|&nbsp;&nbsp;
+	      Latest New 3.
 	    </marquee>
 	  </div>
 	</div>
@@ -282,10 +277,16 @@
 	      <!-- <div class="carousel-item">
 	        <img src="https://cbpssubscriber.mygov.in/assets/uploads/3rpbtfC38B9muoRQ?51" id="_7yCsbneY8uXMxwGe" onclick="javascript:window.open('https://cbpssubscriber.mygov.in/aff/7yCsbneY8uXMxwGe')" style="cursor:pointer;width:100%;height:auto" onload="javascript:(function(){if(typeof _done == 'undefined' || !_done){this.setAttribute('src', this.getAttribute('src')+'?'+Math.floor((Math.random() * 100) + 1)); _done=true;}}).call(this)">
 	      </div> -->
-	      <div class="carousel-item">
-	        <img src="/nrch/images/railway-2.png" style="cursor:pointer;width:100%;height:613px" >
+	     
+	      <% for(int i = 1; i <= 19; i++) { %>
+			  <div class="carousel-item">
+	        <img src="/nrch/images/gallery/picture<%=i%>.png"  style="cursor:pointer;width:100%;height:613px" 
+	          onerror="this.onerror=null;this.src='/nrch/images/gallery/picture<%=i%>.jpg';">
+	        
 	      </div>
+			<% } %>
 	    </div>
+	    
 	    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
 	      <span class="carousel-control-prev-icon"></span>
 	    </button>
@@ -309,7 +310,7 @@
 
       <div class="col-6 col-sm-4 col-md-2">
         <a href="#" class="circle-link">
-          <img src="images/icon2.png" alt="Patient">
+          <img src="images/patient.png" alt="Patient">
           <p>Patient</p>
         </a>
       </div>
@@ -337,7 +338,7 @@
 
       <div class="col-6 col-sm-4 col-md-2">
         <a href="#" class="circle-link">
-          <img src="images/icon6.jpeg" alt="Visitor">
+          <img src="images/visitors.png" alt="Visitor">
           <p>Visitor</p>
         </a>
       </div>
@@ -369,43 +370,47 @@
 	        </li>
 	      </ul>
 	
-	      <div class="tab-content border border-top-0 bg-white rounded-bottom" id="infoTabsContent" style="height: 450px;overflow-y: scroll;">
-		<div class="tab-pane fade show active" id="whatsNew" role="tabpanel">
-	          <ul>
-	            <li>ADDENDUM : Notice for Centralized Recruitment of Senior Residents on Regular basis in various hospitals/Medical Institutions of Govt. of NCT of Delhi dated 24.10.2025.</li>
-	            <li>Corrigendum of protocol DM/M.Ch students (Batch 2024-27) GIPMER/ MAMC.</li>
-	            <li>Order : Regarding Organizing the Annual Intra College Festival GOONJ-2025 to Azad Medicos Association (AMA) between 30th October -1st November 2025.</li>
-	            <li>CIRCULAR- Protocol of DM/M.Ch students of GIPMER/MAMC (Batch 2024-27).</li>
-	            <li>Notice : All the lst Year MBBS Student (NS) Supple Theory Examination-2025 students who are required to appear in the lst Year MBBS (NEW SCHEME)Examination-2025 are hereby directed to remit their requisite amount of exam fee..</li>
-	            <li>Circular : All the MBBS Students are hereby informed to apply for the scholarship (Fresh/Renewal) for the year 2025-26</li>
-	            <li>CLarification regarding admissible leave for MD/MS Batch 2023-26 under PG Ordinance 2023.</li>
-	            <li>Notice : All the MBBS students of the institution are informed to pay tuition fee and othe compulsory charges for the session 2025-26 to DEAN PLA MAMC to be deposited in Canara Bank, Branch MAMC.</li>
-	          </ul>
-	        </div>
-	        <div class="tab-pane fade show active" id="notifications" role="tabpanel">
-	          <ul>
-	            <li>CIRCULAR- Protocol of DM/M.Ch students of GIPMER/MAMC (Batch 2024-27).</li>
-	            <li>Notice : All the lst Year MBBS Student (NS) Supple Theory Examination-2025 students who are required to appear in the lst Year MBBS (NEW SCHEME)Examination-2025 are hereby directed to remit their requisite amount of exam fee..</li>
-	            <li>Circular : All the MBBS Students are hereby informed to apply for the scholarship (Fresh/Renewal) for the year 2025-26</li>
-	            <li>CLarification regarding admissible leave for MD/MS Batch 2023-26 under PG Ordinance 2023.</li>
-	            <li>Notice : All the MBBS students of the institution are informed to pay tuition fee and othe compulsory charges for the session 2025-26 to DEAN PLA MAMC to be deposited in Canara Bank, Branch MAMC.</li>
-	          </ul>
-	        </div>
-	        <div class="tab-pane fade" id="tenders" role="tabpanel">
-	          <ul>
-	            <li>Tender for college canteen renovation.</li>
-	            <li>Quotation invited for lab equipment.</li>
-	            <li>AMC for network systems.</li>
-	          </ul>
-	        </div>
-	        <div class="tab-pane fade" id="recruitment" role="tabpanel">
-	          <ul>
-	            <li>Applications invited for Assistant Professor (Physics).</li>
-	            <li>Recruitment for Library Assistant open till 20th Nov.</li>
-	            <li>Walk-in interview for Nursing Staff.</li>
-	          </ul>
-	        </div>
-	      </div>
+	
+	    <div class="tab-content border border-top-0 bg-white rounded-bottom" id="infoTabsContent" style="height: 450px; overflow-y: scroll;">
+		  <div class="tab-pane fade show active" id="whatsNew" role="tabpanel">
+		    <ul>
+		      <li>Sample content 1</li>
+		      <li>Sample content 2</li>
+		      <li>Sample content 3</li>
+		      <li>Sample content 4</li>
+		      <li>Sample content 5</li>
+		      <li>Sample content 6</li>
+		      <li>Sample content 7</li>
+		      <li>Sample content 8</li>
+		    </ul>
+		  </div>
+		
+		  <div class="tab-pane fade show" id="notifications" role="tabpanel">
+		    <ul>
+		      <li>Sample notification 1</li>
+		      <li>Sample notification 2</li>
+		      <li>Sample notification 3</li>
+		      <li>Sample notification 4</li>
+		      <li>Sample notification 5</li>
+		    </ul>
+		  </div>
+		
+		  <div class="tab-pane fade" id="tenders" role="tabpanel">
+		    <ul>
+		      <li>Sample tender 1</li>
+		      <li>Sample tender 2</li>
+		      <li>Sample tender 3</li>
+		    </ul>
+		  </div>
+		
+		  <div class="tab-pane fade" id="recruitment" role="tabpanel">
+		    <ul>
+		      <li>Sample recruitment 1</li>
+		      <li>Sample recruitment 2</li>
+		      <li>Sample recruitment 3</li>
+		    </ul>
+		  </div>
+		</div>      
 	    </div>
 	
 	    <!-- Right: Person Cards (Narrower) -->
@@ -415,10 +420,7 @@
 	    <!-- Person 1 -->
 	    <div class="d-flex align-items-center mb-4 person-card">
 	      <div style="position: relative; margin-right: 15px;">
-	        <img src="images/ministers/Shri Ashwini Vaishnaw.jpg" class="person-img" alt="Person 1">
-	        <div class="person-overlay">
-	          Shri Ashwini<br>Vaishnaw
-	        </div>
+	        <img src="images/ministers/Shri-Ashwini-Vaishnaw.png" class="person-img" alt="Person 1">
 	      </div>
 	      <div>
 	        <h5 class="mb-1">Shri Ashwini Vaishnaw</h5>
@@ -430,9 +432,7 @@
 	    <div class="d-flex align-items-center mb-4 person-card">
 	      <div style="position: relative; margin-right: 15px;">
 	        <img src="images/ministers/Shri V Somanna.jpg" class="person-img" alt="Person 2">
-	        <div class="person-overlay">
-	          Shri V<br>Somanna
-	        </div>
+	        
 	      </div>
 	      <div>
 	        <h5 class="mb-1">Shri V. Somanna</h5>
@@ -444,9 +444,7 @@
 	    <div class="d-flex align-items-center person-card">
 	      <div style="position: relative; margin-right: 15px;">
 	        <img src="images/ministers/Shri Ravneet Singh.jpg" class="person-img" alt="Person 3">
-	        <div class="person-overlay">
-	          Shri Ravneet<br>Singh
-	        </div>
+	        	
 	      </div>
 	      <div>
 	        <h5 class="mb-1">Shri Ravneet Singh</h5>
@@ -456,11 +454,6 @@
 	
 	  </div>
 	</div>
-
-	
-	
-	
-	
 
   </div>
 </div>

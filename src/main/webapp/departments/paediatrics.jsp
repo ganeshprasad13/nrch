@@ -155,7 +155,7 @@
       <p>
         These specialized services ensure comprehensive evaluation, targeted treatment, and long-term management of a wide spectrum of pediatric and neonatal disorders. The Pediatric team actively participates in school health camps conducted periodically, carrying out screening for common diseases and promoting preventive Pediatric Medicine in Railway Schools.
       </p>
-        <img src="../images/pediatrics1.jpg" alt="Pediatrics Department" class="overview-img">
+        <img src="/nrcn/images/pediatrics1.jpg" alt="Pediatrics Department" class="overview-img">
       
 
       <p>
@@ -165,12 +165,12 @@
       <p>
         With a bed strength of 30, the department caters to both emergency and inpatient pediatric cases. In addition to routine medical care, surgical cases are managed in close collaboration with the surgical team to ensure optimal outcomes.
       </p>
-       <img src="../images/pediatrics2.jpg" alt="Pediatric Care" class="overview-img">
+       <img src="/nrcn/images/pediatrics2.jpg" alt="Pediatric Care" class="overview-img">
       <p>
         A variety of essential procedures are regularly performed within the department, including pleural tapping, ascitic tapping, bone marrow aspiration, lumbar puncture, and central line insertion.
       </p>
 
-      <img src="../images/pediatrics3.jpg" alt="NICU" class="overview-img">
+     <!--  <img src="../images/pediatrics3.jpg" alt="NICU" class="overview-img"> -->
 
       <p>
         The Pediatric Intensive Care Unit (PICU) is equipped to manage critically ill children requiring advanced respiratory support such as High-Flow Nasal Cannula (HFNC) and mechanical ventilation. In addition, the department offers screening echocardiography and provides comprehensive management of pediatric cardiac cases referred from far-flung areas, not only within the Northern Railways system but also from other zones.
@@ -179,7 +179,7 @@
       <p>
         Our Newborn Care Unit (NICU) is a 10-bedded, state-of-the-art facility, fully equipped to deliver world-class neonatal care. The unit is fitted with T-Piece Resuscitators for advanced neonatal resuscitation, ventilators and CPAP machines for respiratory support, phototherapy units, open care systems, and transport incubators for critically ill newborns.
       </p>
-     <img src="../images/pediatrics4.jpg" alt="Pediatrics Team" class="overview-img">
+     <img src="/nrcn/images/pediatrics4.jpg" alt="Pediatrics Team" class="overview-img">
       <p>
         The Special Newborn Care Unit (SNCU) routinely performs major neonatal procedures such as Exogenous Surfactant Therapy, Total Parenteral Nutrition, Exchange Transfusion, Fortified Enteral Nutrition, and Comprehensive Neonatal Screening. The unit also handles resuscitation and postnatal care of all in-house births, ensuring thermal regulation, feeding establishment, infection control, and early developmental follow-up.
       </p>
@@ -191,7 +191,7 @@
       <p>
         The department operates a dedicated <strong>Immunization Centre</strong> that provides comprehensive vaccination services to both Railway and Non-Railway beneficiary children. All vaccines under the Universal Immunization Program (UIP) are administered safely and systematically, supported by the <strong>UWIN digital platform</strong> for tracking and reminders.
       </p>
-      <img src="../images/pediatrics5.jpg" alt="Pediatrics Team" class="overview-img">
+      <img src="/nrcn/images/pediatrics5.jpg" alt="Pediatrics Team" class="overview-img">
       <p>
         In addition to routine immunization, optional vaccines recommended by the Indian Academy of Pediatrics (IAP) are available for high-risk children. The centre also manages adolescent and adult vaccinations, including COVID-19 immunization drives.
       </p>

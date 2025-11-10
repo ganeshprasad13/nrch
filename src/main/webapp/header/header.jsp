@@ -49,6 +49,7 @@ updateDateTime();
 }
 
 .institute-subtitle {
+display: inline;
   font-size: 1rem;
   font-weight: 500;
   color: #555;
@@ -139,7 +140,7 @@ updateDateTime();
   background: #eef3ff;
   cursor: pointer;
 }
-
+navbar
 body {
   background-color: #e2ecf7;
 }
@@ -189,6 +190,9 @@ body {
 <div class="top-header text-center text-md-start">
   <div class="container d-flex justify-content-between align-items-center">
     <div id="datetime"></div>
+    <a class="LangSwitcher" href="#mainCarousel" title="Skip to Main Content">
+		Skip to Main Content
+	</a>
   </div>
 </div>
 
@@ -200,11 +204,12 @@ body {
         <img src="/nrch/images/emblem.png" alt="Logo" class="main-logo">
       </a>
       <div class="institute-name">
-        <h1 class="institute-title mb-0">
-          Indian Railway Post Graduate Institute of Medical Sciences and Research
+        <h1 class="institute-title mb-0" style="display:inline">
+          Indian Railway Post Graduate Institute of Medical Sciences and Research <br>
+          And Associated
         </h1>
-        <h2 class="institute-subtitle mb-0">
-          and associated Northern Railways Central Hospital, New Delhi
+        <h2 class="institute-subtitle mb-0" style="display:inline">
+          Northern Railway Central Hospital, New Delhi
         </h2>
       </div>
     </div>
@@ -215,7 +220,7 @@ body {
 </header>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav id = "navbar" class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
     <a class="navbar-brand d-lg-none" href="#">Menu</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -328,7 +333,7 @@ body {
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown">Gallery</a>
           <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
-            <li><a class="dropdown-item" href="gallery.jsp">Photo Gallery</a></li>
+           <!--  <li><a class="dropdown-item" href="gallery.jsp">Photo Gallery</a></li> -->
             <li><a class="dropdown-item" href="kumbh.jsp">Kumbh@NRCH</a></li>
           </ul>
         </li>
