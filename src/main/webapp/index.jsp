@@ -5,7 +5,7 @@
 	<head>
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <title>Northern Railway Central Hospital</title>
+	  <title>Indian Railway Post Graduate Institute of Medical Sciences and Research</title>
 	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	  <style>
 	  
@@ -18,7 +18,7 @@
 	  font-size: 0.95rem;
 	  white-space: nowrap; /* ensures it stays on one line */
 	}
-	}
+	
 	
 	/* Person Cards */
 	.modern-card {
@@ -58,12 +58,10 @@
 	}
 	
 	/* Slightly smaller circular images */
-	.person-img {
-	  width: 120px;
-	  height: 120px;
-	  object-fit: cover;
-	  border: 3px solid #004080;
-	}
+	
+	/* --- Enhanced Person Cards --- */
+	
+	
 	  .card img {
 	  object-fit: cover;
 	  border: 2px solid #dee2e6;
@@ -82,9 +80,177 @@
 	  margin-bottom: 0 !important;
 	}
 	 
+	li{
+	font-weight: bold;
+	}
+.bottom-section {
+  background-color: #ffffff;
+  border-top: 2px solid #d0d0d0;
+}
+
+.bottom-section p {
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #333333; /* darker paragraph text */
+}
+
+.read-more-btn {
+  color: #0d47a1;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+  color: #003c8f;
+  border-bottom: 2px solid #0d47a1;
+}
+
+.read-more-btn {
+	  color: #0d47a1;
+	  font-weight: 600;
+	  text-decoration: none;
+	  border-bottom: 2px solid transparent;
+	  transition: all 0.3s ease;
+	}
 	
+	.read-more-btn:hover {
+	  color: #003c8f;
+	  border-bottom: 2px solid #0d47a1;
+	}
+	
+	.carousel-img {
+	  height: 613px; 
+	  object-fit: cover; 
+	  cursor: pointer;
+	}
+	.circle-link {
+	  text-decoration: none;
+	  color: #003366;
+	  display: inline-block;
+	  transition: transform 0.3s ease, color 0.3s ease;
+	}
+	
+	.circle-link p {
+	  margin-top: 10px;
+	  font-weight: 600;
+	  font-size: 0.95rem;
+	}
+	.circle-link:hover p {
+	  color: #0d6efd;
+	}
+	/* ✅ Circular Quick Links Section (Final Look) */
+	.circular-links {
+	  background-color: #e8f4ff; /* Light blue background behind circles */
+	  padding-top: 2rem;
+	  padding-bottom: 2rem;
+	  border-top: 2px solid #cfe7ff;
+	  border-bottom: 2px solid #cfe7ff;
+	}
+	
+	.circle-link {
+	  text-decoration: none;
+	  color: #003366;
+	  display: inline-block;
+	  transition: transform 0.3s ease, color 0.3s ease;
+	}
+	
+	.circle-link img {
+	  width: 110px;
+	  height: 110px;
+	  object-fit: cover;
+	  border-radius: 50%;
+	  border: 3px solid #004080;
+	  padding: 10px;
+	  /* 🔶 Gradient orange background with glossy highlight */
+	  background: radial-gradient(circle at 30% 30%, #ffd699, #ffb74d);
+	  transition: all 0.3s ease;
+	  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* subtle outer shadow */
+	  position: relative;
+	  overflow: hidden;
+	}
+	
+	/* ✨ Add glossy light reflection */
+	.circle-link img::before {
+	  content: "";
+	  position: absolute;
+	  top: 5%;
+	  left: 5%;
+	  width: 90%;
+	  height: 40%;
+	  border-radius: 50%;
+	  background: rgba(255, 255, 255, 0.4);
+	  filter: blur(6px);
+	  pointer-events: none;
+	}
+	
+	/* Hover effect */
+	.circle-link:hover img {
+	  transform: scale(1.1);
+	  border-color: #0d6efd;
+	  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+	}
 	    
-	  </style>
+	    
+	   .person-card {
+	  position: relative;
+	  overflow: hidden;
+	  transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+	
+	.person-card:hover {
+	  transform: translateY(-5px);
+	  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+	}
+	
+	/* Profile Image Styling */
+		.person-img {
+		  width: 110px;
+		  height: 110px;
+		  object-fit: contain;
+		  border-radius: 50%;
+		  border: 3px solid #004080;
+		   /* ✨ subtle outer glow */
+		  transition: all 0.3s ease;
+		  position: relative;
+		  z-index: 1;
+		}
+	
+	/* Hover zoom effect on image */
+	.person-card:hover .person-img {
+	  transform: scale(1.1);
+	 
+	}
+	
+	/* Text overlay effect (hidden by default) */
+	.person-card .person-overlay {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 110px;
+	  height: 110px;
+	  border-radius: 50%;
+	  background: rgba(0, 64, 128, 0.7);
+	  color: #fff;
+	  display: flex;
+	  align-items: center;	
+	  justify-content: center;
+	  opacity: 0;
+	  transition: opacity 0.4s ease;
+	  text-align: center;
+	  font-size: 0.9rem;
+	  font-weight: 600;
+	}
+	
+	/* Show overlay text on hover */
+	.person-card:hover .person-overlay {	
+	  opacity: 1;
+	  
+	}
+	    
+	    
+	    </style>
 	</head>
 	<body>
 	
@@ -110,8 +276,14 @@
 	  <!-- Carousel -->
 	  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
 	    <div class="carousel-inner">
-	      <div class="carousel-item active">
-	        <img src="images/banner1.jpg" class="d-block w-100" alt="Hospital Banner 1" height="450px">
+	    <div class="carousel-item active">
+	        <img src="/nrch/images/banner1.jpg" style="cursor:pointer;width:100%;height:613px" >
+	      </div>
+	      <!-- <div class="carousel-item">
+	        <img src="https://cbpssubscriber.mygov.in/assets/uploads/3rpbtfC38B9muoRQ?51" id="_7yCsbneY8uXMxwGe" onclick="javascript:window.open('https://cbpssubscriber.mygov.in/aff/7yCsbneY8uXMxwGe')" style="cursor:pointer;width:100%;height:auto" onload="javascript:(function(){if(typeof _done == 'undefined' || !_done){this.setAttribute('src', this.getAttribute('src')+'?'+Math.floor((Math.random() * 100) + 1)); _done=true;}}).call(this)">
+	      </div> -->
+	      <div class="carousel-item">
+	        <img src="/nrch/images/railway-2.png" style="cursor:pointer;width:100%;height:613px" >
 	      </div>
 	    </div>
 	    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
@@ -122,16 +294,72 @@
 	    </button>
 	  </div>
 	
+
+	  <!-- ====== Circular Quick Links Section (below carousel) ====== -->
+<section class="circular-links py-4">
+  <div class="container text-center">
+    <div class="row justify-content-center g-4">
+      
+      <div class="col-6 col-sm-4 col-md-2">
+        <a href="#" class="circle-link">
+          <img src="images/icon1.png" alt="Faculty">
+          <p>Faculty</p>
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-2">
+        <a href="#" class="circle-link">
+          <img src="images/icon2.png" alt="Patient">
+          <p>Patient</p>
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-2">
+        <a href="#" class="circle-link">
+          <img src="images/icon3.png" alt="Student">
+          <p>Student</p>
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-2">
+        <a href="#" class="circle-link">
+          <img src="images/icon4.png" alt="Employee">
+          <p>Employee</p>
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-2">
+        <a href="#" class="circle-link">
+          <img src="images/icon5.png" alt="Vendor">
+          <p>Vendor</p>
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-2">
+        <a href="#" class="circle-link">
+          <img src="images/icon6.jpeg" alt="Visitor">
+          <p>Visitor</p>
+        </a>
+      </div>
+
+    </div>
+	</div>
+</section>
+
+
 	  <!-- Main Content -->
 	 <!-- Notifications, Tenders, Recruitment + Important Persons Section -->
 	<div class="container my-4">
 	  <div class="row align-items-stretch">
 	    
 	    <!-- Left: Tabs Section (Wider) -->
-	    <div class="col-lg-7 col-md-7">
+	    <div class="col-md-8">
 	      <ul class="nav nav-tabs" id="infoTabs" role="tablist">
+		<li class="nav-item" role="presentation">
+	          <button class="nav-link active" id="whats-new-tab" data-bs-toggle="tab" data-bs-target="#whatsNew" type="button" role="tab">What's New</button>
+	        </li>
 	        <li class="nav-item" role="presentation">
-	          <button class="nav-link active" id="notifications-tab" data-bs-toggle="tab" data-bs-target="#notifications" type="button" role="tab">Notifications</button>
+	          <button class="nav-link" id="notifications-tab" data-bs-toggle="tab" data-bs-target="#notifications" type="button" role="tab">Notifications</button>
 	        </li>
 	        <li class="nav-item" role="presentation">
 	          <button class="nav-link" id="tenders-tab" data-bs-toggle="tab" data-bs-target="#tenders" type="button" role="tab">Tenders</button>
@@ -141,13 +369,26 @@
 	        </li>
 	      </ul>
 	
-	      <div class="tab-content p-3 border border-top-0 bg-white rounded-bottom" id="infoTabsContent" style="height: 90%;">
+	      <div class="tab-content border border-top-0 bg-white rounded-bottom" id="infoTabsContent" style="height: 450px;overflow-y: scroll;">
+		<div class="tab-pane fade show active" id="whatsNew" role="tabpanel">
+	          <ul>
+	            <li>ADDENDUM : Notice for Centralized Recruitment of Senior Residents on Regular basis in various hospitals/Medical Institutions of Govt. of NCT of Delhi dated 24.10.2025.</li>
+	            <li>Corrigendum of protocol DM/M.Ch students (Batch 2024-27) GIPMER/ MAMC.</li>
+	            <li>Order : Regarding Organizing the Annual Intra College Festival GOONJ-2025 to Azad Medicos Association (AMA) between 30th October -1st November 2025.</li>
+	            <li>CIRCULAR- Protocol of DM/M.Ch students of GIPMER/MAMC (Batch 2024-27).</li>
+	            <li>Notice : All the lst Year MBBS Student (NS) Supple Theory Examination-2025 students who are required to appear in the lst Year MBBS (NEW SCHEME)Examination-2025 are hereby directed to remit their requisite amount of exam fee..</li>
+	            <li>Circular : All the MBBS Students are hereby informed to apply for the scholarship (Fresh/Renewal) for the year 2025-26</li>
+	            <li>CLarification regarding admissible leave for MD/MS Batch 2023-26 under PG Ordinance 2023.</li>
+	            <li>Notice : All the MBBS students of the institution are informed to pay tuition fee and othe compulsory charges for the session 2025-26 to DEAN PLA MAMC to be deposited in Canara Bank, Branch MAMC.</li>
+	          </ul>
+	        </div>
 	        <div class="tab-pane fade show active" id="notifications" role="tabpanel">
 	          <ul>
-	            <li>Annual cultural fest announced.</li>
-	            <li>Holiday on 8th Nov due to Diwali.</li>
-	            <li>Blood donation camp registration open.</li>
-	            <li>Notice regarding annual health checkup.</li>
+	            <li>CIRCULAR- Protocol of DM/M.Ch students of GIPMER/MAMC (Batch 2024-27).</li>
+	            <li>Notice : All the lst Year MBBS Student (NS) Supple Theory Examination-2025 students who are required to appear in the lst Year MBBS (NEW SCHEME)Examination-2025 are hereby directed to remit their requisite amount of exam fee..</li>
+	            <li>Circular : All the MBBS Students are hereby informed to apply for the scholarship (Fresh/Renewal) for the year 2025-26</li>
+	            <li>CLarification regarding admissible leave for MD/MS Batch 2023-26 under PG Ordinance 2023.</li>
+	            <li>Notice : All the MBBS students of the institution are informed to pay tuition fee and othe compulsory charges for the session 2025-26 to DEAN PLA MAMC to be deposited in Canara Bank, Branch MAMC.</li>
 	          </ul>
 	        </div>
 	        <div class="tab-pane fade" id="tenders" role="tabpanel">
@@ -168,43 +409,63 @@
 	    </div>
 	
 	    <!-- Right: Person Cards (Narrower) -->
-	    <div class="col-md-4">
-	  <div class="card p-3 shadow-sm" style="border-radius: 15px;">
-	    <div class="d-flex align-items-center mb-4">
-	      <img src="images/shri-vinai-kumar-saxena11_0.jpg" class="rounded-circle me-3 person-img" alt="Person 1">
-	            <div>
-	              <h5 class="mb-1">Shri Vinai Kumar Saxena</h5>
-	              <p class="mb-0 text-muted">Lieutenant Governor</p>
-	            </div>
+	 <div class="col-md-4">
+  <div class="card p-3 shadow-sm modern-card" style="border-radius: 12px; margin-top: 40px; height: 450px;">
+    
+	    <!-- Person 1 -->
+	    <div class="d-flex align-items-center mb-4 person-card">
+	      <div style="position: relative; margin-right: 15px;">
+	        <img src="images/ministers/Shri Ashwini Vaishnaw.jpg" class="person-img" alt="Person 1">
+	        <div class="person-overlay">
+	          Shri Ashwini<br>Vaishnaw
+	        </div>
+	      </div>
+	      <div>
+	        <h5 class="mb-1">Shri Ashwini Vaishnaw</h5>
+	        <p class="mb-0 text-muted">Honourable Minister of Railways</p>
+	      </div>
 	    </div>
 	
-	    <div class="d-flex align-items-center mb-4">
-	      <img src="images/rekha_gupta.jpg" class="rounded-circle me-3 person-img" alt="Person 2">
-	            <div>
-	              <h5 class="mb-1">Smt. Rekha Gupta</h5>
-	              <p class="mb-0 text-muted">Chief Minister</p>
-	            </div>
+	    <!-- Person 2 -->
+	    <div class="d-flex align-items-center mb-4 person-card">
+	      <div style="position: relative; margin-right: 15px;">
+	        <img src="images/ministers/Shri V Somanna.jpg" class="person-img" alt="Person 2">
+	        <div class="person-overlay">
+	          Shri V<br>Somanna
+	        </div>
+	      </div>
+	      <div>
+	        <h5 class="mb-1">Shri V. Somanna</h5>
+	        <p class="mb-0 text-muted">Honourable Minister of State for Railways</p>
+	      </div>
 	    </div>
 	
-	    <div class="d-flex align-items-center">
-	      <img src="images/1000358422.jpg" class="rounded-circle me-3 person-img" alt="Person 3">
-	            <div>
-	              <h5 class="mb-1">Dr. Pankaj Kumar Singh</h5>
-	              <p class="mb-0 text-muted">Minister</p>
-	            </div>
+	    <!-- Person 3 -->
+	    <div class="d-flex align-items-center person-card">
+	      <div style="position: relative; margin-right: 15px;">
+	        <img src="images/ministers/Shri Ravneet Singh.jpg" class="person-img" alt="Person 3">
+	        <div class="person-overlay">
+	          Shri Ravneet<br>Singh
+	        </div>
+	      </div>
+	      <div>
+	        <h5 class="mb-1">Shri Ravneet Singh</h5>
+	        <p class="mb-0 text-muted">Honourable Minister of State for Railways</p>
+	      </div>
 	    </div>
+	
 	  </div>
 	</div>
-	
-	  </div>
-	</div>
+
 	
 	
 	
 	
-	
-	
-	
+
+  </div>
+</div>
+
+
 	<!-- footer start-->
 	<%@ include file="header/footer.jsp" %>
 	<!-- footer end-->

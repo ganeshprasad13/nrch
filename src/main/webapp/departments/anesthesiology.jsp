@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Overview – Department of Pediatrics | NRCH</title>
+  <title>Department of Anesthesiology | NRCH</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -129,7 +129,7 @@
 <!-- HERO SECTION -->
 <section class="hero-section">
   <div class="hero-content">
-    <h1>Department of Surgery</h1>
+    <h1>Department of Anesthesiology</h1>
     <nav aria-label="breadcrumb">
       
     </nav>
@@ -144,19 +144,59 @@
     <hr>
     
     <div id="ntext" style="font-family:tahoma;font-size:12px; color:black;">
-      <p>Anaesthesiologists are doctors, who have special training in giving drugs/other agents to prevent or relieve pain and/or provide controlled unconsciousness during surgery or other procedures. NRCH has currently four senior consultants in Anaesthesia, in addition to a large number of residents. The doctors are assisted by many well-trained nursing staff; OT assistants and other paramedical staff.</p>
+      <p>
+	  Anaesthesiologists are doctors who have special training in giving drugs or other agents to prevent or relieve pain and/or provide controlled unconsciousness during surgery or other procedures. 
+	  NRCH currently has five senior consultants in Anaesthesia, in addition to a large number of residents. The doctors are assisted by many well-trained nursing staff, OT assistants, and other paramedical staff.
+	</p>
 
       <div style="text-align:center; margin:15px 0;">
         <img src="https://nr.indianrailways.gov.in//uploads/images/1761117671516-Picture1.png" alt="Anesthesiology Image" style="max-width:100%; border-radius:8px;">
       </div>
 
-      <p><b>Dr. Mamta Chadha</b> is Head of Department and has an experience of more than 30 years post MD. An alumni of Lady Harding Medical College, she has a special interest in Pain Management especially in acupuncture. She is also a sports enthusiast.</p>
-
-      <p><b>Dr. A.K. Sharma</b> has headed the department of Anaesthesia at NRCH for a decade till 2023. With over 30 years of experience after postgraduation, he has a wealth of experience in all types of surgeries. His interests are patient safety and ensuring patient comfort during anaesthesia.</p>
-
-      <p><b>Dr. Sushil Krishnan</b> is a senior consultant with over 26 years of experience after postgraduate training from IPGMER, Calcutta University. Apart from provision of anaesthesia in all types of cases, his special interests include regional blocks, acute pain relief and early recovery after anaesthesia.</p>
-
-      <p><b>Dr. Dildeep Singh</b> is a junior consultant with over 4 years of experience after post graduate training from Delhi University. His special interests are Anaesthesia, Intensive Care and teaching. He is interested in sports and has also won many awards in cricket.</p>
+     <p><b>Dr. Mamta Chadha</b> is Head of Department and has an experience of more than 30 years post MD. An alumna of Lady Hardinge Medical College, she has a special interest in Pain Management, especially in acupuncture. She is also a sports enthusiast.</p>
+	
+	<p><b>Dr. A.K. Sharma</b> is Sr Consultant and has been Head of the Department of Anaesthesia at NRCH for nearly a decade – till 2023. An alumnus of UCMS, Delhi and PG from Safdarjung Hospital, he has over 30 years of experience after postgraduation. He has a wealth of experience in all types of surgeries. His interests are patient safety and ensuring patient comfort during anaesthesia.</p>
+	
+	<p><b>Dr. Sushil Krishnan</b> is a Senior Consultant with over 27 years of experience post MD (Anesth) from IPGMER, Calcutta University. Apart from the provision of anaesthesia in all types of cases, his special interests include regional blocks, acute pain relief and early recovery after anaesthesia.</p>
+	
+	<p><b>Dr. Rakesh Kumar</b> is a Senior Anesthesiologist with more than 25 years of experience. An alumnus of UCMS, Delhi and PG from Safdarjung Hospital, he completed his DNB from Railway Hospital. His special interest is in continuously updating knowledge and participating in all kinds of academic activities.</p>
+	
+	<p><b>Dr. Dildeep Singh</b> is a Junior Consultant with over 5 years of experience after postgraduate training from Army Hospital (R&R), Delhi Cantt. (Delhi University). His special interests are Anaesthesia, Intensive Care, and teaching. He is interested in sports and has also won many awards in cricket.</p>
+	
+	<h4>Various Activities in Department of Anesthesiology</h4>
+	
+	<h5>Day Care Services in Operation Theater</h5>
+	<ul>
+	  <li>Preoperative assessment and counseling</li>
+	  <li>Minimally invasive procedures (e.g., hernia repair, cataract surgery, endoscopies)</li>
+	  <li>Anesthesia: usually local or regional, sometimes conscious sedation</li>
+	  <li>Pain clinic with procedures (RFA, Facet joint blocks, Root blocks, PRP, USG guided blocks)</li>
+	  <li>Postoperative recovery in a designated observation area</li>
+	  <li>Discharge once stable and criteria are met</li>
+	  <li>Follow-up instructions and outpatient care</li>
+	</ul>
+	
+	<h5>Inpatient Services in Operation Theater</h5>
+	<ul>
+	  <li>Comprehensive preoperative assessment</li>
+	  <li>General anesthesia or regional anesthesia</li>
+	  <li>Major or complex surgeries (e.g., oncosurgery, GI surgery, neurosurgery, VATS procedures, urological surgeries, orthopedic procedures, spine surgery, joint replacements, laparoscopic procedures, major gynecological surgeries, ENT surgeries, cochlear implant, laser surgeries)</li>
+	  <li>Postoperative ICU or ward monitoring</li>
+	  <li>Postoperative pain management and supportive care</li>
+	  <li>Extended recovery period and rehabilitation</li>
+	  <li>Discharge planning with follow-up care instructions</li>
+	</ul>
+	
+	<p>There are seven Operation Theatres (including 3 Modular OTs) fully equipped with high-end OT tables, Anaesthesia workstations, Monitors, High-end airway management systems, Video Laryngoscopes, Fibreoptic Laryngoscopes, Ultrasound machines for anaesthesia purposes, Nerve stimulators, HFNO, Ventilators, etc.</p>
+	
+	<h4>Clinical and Academic Focus</h4>
+	<p>Regular academic sessions like basic sciences lectures, case discussions, and journal clubs are conducted for four MD Anaesthesia trainees per year. The team also contributes actively to research and anaesthesia skill training. It provides CPR training to the medical staff of the hospital and the non-medical staff of Indian Railways.</p>
+	
+	<h4>Non-Operating Room Services</h4>
+	<ul>
+	  <li>Attending life-threatening emergencies in the casualty and ICU</li>
+	  <li>Providing airway management, CPR, and other life-saving procedures like central venous catheter insertion, hemodialysis catheter insertion, etc.</li>
+	</ul>
 
       <div style="text-align:center; margin:15px 0;">
         <img src="https://nr.indianrailways.gov.in//uploads/images/1761117950687-Anaesthesia Schedule.png" alt="Anaesthesia Schedule" style="max-width:100%; border-radius:8px;">

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Overview – Department of Pediatrics | NRCH</title>
+  <title>Department of Medicine | NRCH</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -128,7 +128,7 @@
 <!-- HERO SECTION -->
 <section class="hero-section">
   <div class="hero-content">
-    <h1>Department of Surgery</h1>
+    <h1>Department of Medicine</h1>
     <nav aria-label="breadcrumb">
       
     </nav>
@@ -143,7 +143,7 @@
 	
   <!-- Department of Medicine -->
   <div class="card-overview w-100">
-    <h2>Department of Medicine</h2>
+    <h2>Department of Medicine @ IRPGIMSR</h2>
     <hr>
 
     <div id="ntext" style="font-family:tahoma;font-size:12px; color:black;">

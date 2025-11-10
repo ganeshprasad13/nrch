@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Overview – Department of Pediatrics | NRCH</title>
+  <title>Department of Pathology | NRCH</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -138,7 +138,7 @@
     <div class="card-overview w-100">
      
 
-      <h2>Pathology </h2>
+      <h2>Department of Pathology @ IRPGIMSR</h2>
       <hr>
 <div id="ViEtDeVdIvId" style="POSITION:Relative;FONT-FAMILY:Arial;FONT-SIZE:12px; BACKGROUND-COLOR:white"><img src="https://nr.indianrailways.gov.in//uploads/images/1754473161222-Pathology Facilities.png"><br><img src="https://nr.indianrailways.gov.in//uploads/images/1754545375488-Pathology Facilities 2.png"><img src="https://nr.indianrailways.gov.in//uploads/images/1755517687438-Pathology Facilities 3.png"><br></div>  
 </div></section>

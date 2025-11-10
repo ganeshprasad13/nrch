@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Overview | NRCH</title>
+  <title>Department of Blood Centre | NRCH</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -100,14 +100,14 @@
   <!-- Hero Section -->
   <section class="hero-section">
     <div class="container hero-content">
-      <h1>Blood Centre</h1>
+      <h1>Department of Blood Centre</h1>
     </div>
   </section>
 
   <!-- Main Content -->
   <section class="container content-section">
     <div class="card-overview w-100">
-      <h2>Department of Blood Centre</h2>
+      <h2>Department of Blood Centre @ IRPGIMSR</h2>
       <hr>
       <div id="ViEtDeVdIvId" style="POSITION:Relative;FONT-FAMILY:Arial;FONT-SIZE:12px; BACKGROUND-COLOR:white"><div style="font-size: 12px;"><font class="font_12px" style="color:black;" face="Arial"><img src="https://nr.indianrailways.gov.in//uploads/images/1754549846939-Picture1.png"><br></font></div><div style="font-size: 12px;"><font class="font_12px" style="color:black;" face="Arial"><br></font></div><div style="">The Blood Centre at NRCH is the only dedicated Blood Centre in the Northern Railway zone, providing critical support to railway beneficiaries in need of blood transfusions. Whether for patients admitted at NRCH or those visiting Northern Railway Divisional Hospital (NRDH), our centre ensures timely and safe availability of blood and blood components.</div><div style=""><font class="font_12px" style="color:black;" face="Arial"><br></font></div><div style=""><span style="font-family: Arial;">Every donor is screened through a comprehensive protocol to ensure the highest standards of safety. Rigorous testing for transfusion-transmitted infections (TTIs) is performed on all donations, utilizing both ELISA (Inhouse) and Nucleic Acid Testing (NAT - outsourced) methods for enhanced sensitivity and reliability.</span></div><div style=""><font class="font_12px" style="color:black;" face="Arial"><br></font></div><div style=""><font class="font_12px" style="color:black;" face="Arial">We are equipped to perform advanced apheresis procedures, enabling the preparation of plasma and single donor platelets (SDP) for patients requiring specialized transfusion support.&nbsp;</font></div><div style=""><font class="font_12px" style="color:black;" face="Arial"><br></font></div><div style=""><span style="font-family: Arial;">Our centre organizes numerous voluntary blood donation camps throughout the year, fostering a culture of altruism and community participation.&nbsp;</span></div><div style=""><span style="font-family: Arial;"><br></span></div><div style=""><span style="font-family: Arial;">We are committed to ensuring that <b style="">no patient is ever denied blood due to non-availability</b>. We actively encourage healthy individuals to step forward and donate blood, as each donation has the power to save lives.</span></div><div style="font-size: 12px;"><span style="font-size: 12px; font-family: Arial;"><br></span></div><div style="font-size: 12px;"><span style="font-size: 12px; font-family: Arial;"><img src="https://nr.indianrailways.gov.in//uploads/images/1754547585870-Honble MR donating blood.png"><br></span></div><div style="font-size: 12px; text-align: center;"><span style="font-family: Arial;"><b style="">Our honorable MR, Shri Ashwini Vaishnaw Ji donating blood at Blood Centre/ NRCH</b></span></div></div>
     </div>

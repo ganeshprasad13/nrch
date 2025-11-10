@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Overview | NRCH</title>
+  <title>Department of Psychiatry | NRCH</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -106,14 +106,14 @@
   <!-- Hero Section -->
   <section class="hero-section">
     <div class="container hero-content">
-      <h1>Psychiatry</h1>
+      <h1>Department of Psychiatry</h1>
     </div>
   </section>
 
   <!-- Main Content -->
   <section class="container content-section">
     <div class="card-overview w-100">
-      <h2>Department of Psychiatry</h2>
+      <h2>Department of Psychiatry @ IRPGIMSR</h2>
       <hr>
    <div id="ViEtDeVdIvId" style="POSITION:Relative;FONT-FAMILY:Arial;FONT-SIZE:12px; BACKGROUND-COLOR:white"><b><u>CONSULTANT</u></b>: Dr. Rama Shankar<div style=""><br></div><div style=""><b><u>FACILITIES PROVIDED:</u></b></div><div style=""><br></div><div style="">- Daily OPD Services: 9 am to 1 pm</div><div style=""><br></div><div style="">- Daily EEG</div><div style=""><br></div><div style="">- Neuropsychological Testing (PGIBBD) - o­n Appointment Basis</div></div>
    </div>

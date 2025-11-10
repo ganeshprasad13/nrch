@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Overview â Department of Pediatrics | NRCH</title>
+  <title>Department of Surgery | NRCH</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -138,7 +138,7 @@
 <section class="container content-section">
   <div class="card-overview">
 
-    <h2>About the Department</h2>
+    <h2>Department of Surgery @ IRPGIMSR</h2>
     <hr>
 
     <!-- ✅ YOUR CONTENT INSERTED CLEANLY BELOW -->

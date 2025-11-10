@@ -12,17 +12,17 @@
   <div class="container text-center">
 
     <div class="mb-3">
-      <a href="#" class="text-white text-decoration-none mx-2">Admin Login</a> |
-      <a href="#" class="text-white text-decoration-none mx-2">Site Map</a> |
+     <!--  <a href="#" class="text-white text-decoration-none mx-2">Admin Login</a> |
+      <a href="#" class="text-white text-decoration-none mx-2">Site Map</a> | -->
       <a href="#" class="text-white text-decoration-none mx-2">Contact Us</a> |
-      <a href="#" class="text-white text-decoration-none mx-2">RTI</a> |
+      <!-- <a href="#" class="text-white text-decoration-none mx-2">RTI</a> | -->
       <a href="#" class="text-white text-decoration-none mx-2">Disclaimer</a> |
       <a href="#" class="text-white text-decoration-none mx-2">Terms & Conditions</a> |
       <a href="#" class="text-white text-decoration-none mx-2">Privacy Policy</a>
     </div>
 
     <div class="mb-3">
-      © 2016 All Rights Reserved.
+      © 2025 All Rights Reserved.
     </div>
 
     <div class="small px-3" style="max-width:900px; margin:auto;">

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Overview | NRCH</title>
+  <title>Department of Dermatology | NRCH</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -105,14 +105,14 @@
   <!-- Hero Section -->
   <section class="hero-section">
     <div class="container hero-content">
-      <h1>Dermatology</h1>
+      <h1>Department of Dermatology</h1>
     </div>
   </section>
 
   <!-- Main Content -->
   <section class="container content-section">
     <div class="card-overview w-100">
-      <h2>Department of Dermatology</h2>
+      <h2>Department of Dermatology @ IRPGIMSR</h2>
       <hr>
    <div id="ViEtDeVdIvId" style="POSITION:Relative;FONT-FAMILY:Arial;FONT-SIZE:12px; BACKGROUND-COLOR:white"><img src="https://nr.indianrailways.gov.in//uploads/images/1754223998610-Dermatology Schedule.png"></div>
    </div>

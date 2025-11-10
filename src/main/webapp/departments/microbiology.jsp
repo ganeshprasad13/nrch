@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Overview – Department of Pediatrics | NRCH</title>
+  <title>Department of Microbiology | NRCH</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -138,7 +138,7 @@
     <div class="card-overview w-100">
      
 
-      <h2>Microbiology </h2>
+      <h2>Department of Microbiology @ IRPGIMSR</h2>
       <hr>
 <div id="ViEtDeVdIvId" style="POSITION:Relative;FONT-FAMILY:Arial;FONT-SIZE:12px; BACKGROUND-COLOR:white"><img src="https://nr.indianrailways.gov.in//uploads/images/1755517648981-Micro 1.png"><br><div style="text-align: center;"><b><u>REPORT AVAILABILITY FOR IN-HOUSE TESTS (OPD PATIENTS)</u></b></div><br><img src="https://nr.indianrailways.gov.in//uploads/images/1754545608008-Micro 2.png"><br><img src="https://nr.indianrailways.gov.in//uploads/images/1754545626108-Micro 3.jpeg"><br><br><br><div style="text-align: center;"><b><u>PARTICIPATION IN EXTERNAL QUALITY ASSURANCE PROGRAMMES</u></b></div><div style="text-align: center;"><br></div><img src="https://nr.indianrailways.gov.in//uploads/images/1754545647254-Micro 4.jpeg"><br></div>
   </div></section><%@ include file="/header/footer.jsp" %>
