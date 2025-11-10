@@ -246,7 +246,7 @@
 	    
 	    
 	    </style>
-	</head>
+	</head> 
 	<body>
 	
 	 <!-- header start -->

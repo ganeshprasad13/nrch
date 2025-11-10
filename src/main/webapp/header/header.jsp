@@ -194,7 +194,7 @@ body {
 		Skip to Main Content
 	</a>
   </div>
-</div>
+</div> 
 
 <!-- Main Header -->
 <header class="main-header">
