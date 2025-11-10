@@ -271,15 +271,15 @@ body {
           </ul>
         </li>
 
-        <li class="nav-item"><a class="nav-link" href="#">Admission</a></li>
+        <li class="nav-item"><a class="nav-link" href="/nrch/nodata.jsp">Admission</a></li>
 
         <!-- Student Zone -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="studentZoneDropdown" role="button" data-bs-toggle="dropdown">Student Zone</a>
           <ul class="dropdown-menu" aria-labelledby="studentZoneDropdown">
-            <li><a class="dropdown-item" href="#">Courses</a></li>
-            <li><a class="dropdown-item" href="#">Admission</a></li>
-            <li><a class="dropdown-item" href="#">Examination</a></li>
+            <li><a class="dropdown-item" href="/nrch/nodata.jsp">Courses</a></li>
+            <li><a class="dropdown-item" href="/nrch/nodata.jsp">Admission</a></li>
+            <li><a class="dropdown-item" href="/nrch/nodata.jsp">Examination</a></li>
           </ul>
         </li>
 

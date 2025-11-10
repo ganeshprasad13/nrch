@@ -302,42 +302,42 @@
     <div class="row justify-content-center g-4">
       
       <div class="col-6 col-sm-4 col-md-2">
-        <a href="#" class="circle-link">
+        <a href="/nrch/nodata.jsp" class="circle-link">
           <img src="images/icon1.png" alt="Faculty">
           <p>Faculty</p>
         </a>
       </div>
 
       <div class="col-6 col-sm-4 col-md-2">
-        <a href="#" class="circle-link">
+        <a href="/nrch/nodata.jsp" class="circle-link">
           <img src="images/patient.png" alt="Patient">
           <p>Patient</p>
         </a>
       </div>
 
       <div class="col-6 col-sm-4 col-md-2">
-        <a href="#" class="circle-link">
+        <a href="/nrch/nodata.jsp" class="circle-link">
           <img src="images/icon3.png" alt="Student">
           <p>Student</p>
         </a>
       </div>
 
       <div class="col-6 col-sm-4 col-md-2">
-        <a href="#" class="circle-link">
+        <a href="/nrch/nodata.jsp" class="circle-link">
           <img src="images/icon4.png" alt="Employee">
           <p>Employee</p>
         </a>
       </div>
 
       <div class="col-6 col-sm-4 col-md-2">
-        <a href="#" class="circle-link">
+        <a href="/nrch/nodata.jsp" class="circle-link">
           <img src="images/icon5.png" alt="Vendor">
           <p>Vendor</p>
         </a>
       </div>
 
       <div class="col-6 col-sm-4 col-md-2">
-        <a href="#" class="circle-link">
+        <a href="/nrch/nodata.jsp" class="circle-link">
           <img src="images/visitors.png" alt="Visitor">
           <p>Visitor</p>
         </a>
