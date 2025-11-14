@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
+<meta name="keywords" content="NRCH, IRPGI, IRPGIMSR, Northern Railway Central Hospital, Indian Railway Post Graduate Institute, Indian Railway Post Graduate Institute of Medical Sciences and Research">
+<meta name="description" content="NRCH, IRPGI, IRPGIMSR, Northern Railway Central Hospital, Indian Railway Post Graduate Institute, Indian Railway Post Graduate Institute of Medical Sciences and Research">
 <!-- Date-Time Script -->
+<script src="https://cdn.userway.org/widget.js" data-account="sYnCngDBRn"></script>
 <script>
 function updateDateTime() {
   const now = new Date();
@@ -23,6 +25,49 @@ updateDateTime();
 </script>
 
 <style>
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.main-logo,
+.right-logo {
+  height: 70px;
+  width: auto;
+}
+
+.institute-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0d47a1;
+  line-height: 1.3;
+  text-align: center;
+  margin: 0;
+}
+
+/* ===== Mobile View ===== */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .main-logo,
+  .right-logo {
+    height: 55px;
+    margin: 5px 0;
+  }
+
+  .institute-title {
+    font-size: 1.4rem;
+  }
+}
+
+
 .top-header a {
   color: white;
   text-decoration: none;
@@ -198,7 +243,7 @@ body {
 
 <!-- Main Header -->
 <header class="main-header">
-  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+ <!--  <div class="container d-flex justify-content-between align-items-center flex-wrap">
     <div class="d-flex align-items-center flex-wrap">
       <a href="/nrch">
         <img src="/nrch/images/emblem.png" alt="Logo" class="main-logo">
@@ -206,17 +251,34 @@ body {
       <div class="institute-name">
         <h1 class="institute-title mb-0" style="display:inline">
           Indian Railway Post Graduate Institute of Medical Sciences and Research <br>
-          And Associated
+          and associated Northern Railway Central Hospital, New Delhi
         </h1>
-        <h2 class="institute-subtitle mb-0" style="display:inline">
-          Northern Railway Central Hospital, New Delhi
-        </h2>
       </div>
     </div>
     <div>
       <img src="/nrch/images/logo.gif" alt="Right Logo" class="right-logo">
     </div>
+  </div> -->
+  <div class="container header-container position-relative py-3 text-center">
+  <!-- Left Logo -->
+  <a href="/nrch" class="left-logo-link">
+    <img src="/nrch/images/emblem.png" alt="Left Logo" class="main-logo">
+  </a>
+
+  <!-- Center Heading -->
+  <div class="institute-name my-2">
+    <h1 class="institute-title mb-0">
+      Indian Railway Post Graduate Institute of Medical Sciences and Research <br>
+          and associated Northern Railway Central Hospital, New Delhi
+    </h1>
   </div>
+
+  <!-- Right Logo -->
+  <div class="right-logo-link">
+    <img src="/nrch/images/logo.gif" alt="Right Logo" class="right-logo">
+  </div>
+</div>
+
 </header>
 
 <!-- Navbar -->
@@ -237,7 +299,7 @@ body {
           <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">About Us</a>
           <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
             <li><a class="dropdown-item" href="/nrch/nodata.jsp">Introduction</a></li>
-            <li><a class="dropdown-item" href="/nrch/nodata.jsp">Vision & Mission</a></li>
+            <li><a class="dropdown-item" href="/nrch/mission.jsp">Vision & Mission</a></li>
             <li><a class="dropdown-item" href="/nrch/about_us/organization.jsp">About IGPGIMSR</a></li>
             <li><a class="dropdown-item" href="/nrch/about_us/aarogya.jsp">Aarogya - The Times of NRCH</a></li>
             <li><a class="dropdown-item" href="/nrch/nodata.jsp">Teaching</a></li>
@@ -283,27 +345,11 @@ body {
           </ul>
         </li>
 
-        <!-- Appointments -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="appointmentsDropdown" role="button" data-bs-toggle="dropdown">Appointments</a>
-          <ul class="dropdown-menu" aria-labelledby="appointmentsDropdown">
-            <li><a class="dropdown-item" href="/nrch/nodata.jsp">Call Centre Details</a></li>
-            <li><a class="dropdown-item" href="/nrch/nodata.jsp">NPIC</a></li>
-          </ul>
-        </li>
-
         <!-- Research -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button" data-bs-toggle="dropdown">Research</a>
           <ul class="dropdown-menu" aria-labelledby="researchDropdown">
-            <li><a class="dropdown-item" href="/nrch/nodata.jsp">Research Output</a></li>
-            <li><a class="dropdown-item" href="/nrch/nodata.jsp">Research Section Website</a></li>
-            <li><a class="dropdown-item" href="/nrch/nodata.jsp">Research Publication Repository</a></li>
-            <li><a class="dropdown-item" href="/nrch/nodata.jsp">Research Submission</a></li>
-            <li><a class="dropdown-item" href="/nrch/nodata.jsp">Intellectual Property Rights and Technology Transfer Division</a></li>
-            <li><a class="dropdown-item" href="/nrch/nodata.jsp">Clinical Research Unit</a></li>
-            <li><a class="dropdown-item" href="/nrch/nodata.jsp">Ethics Committee Registration</a></li>
-            <li><a class="dropdown-item" href="/nrch/nodata.jsp">CARE -(Centre for Advanced Research & Excellence in Neuromodulation)</a></li>
+            
           </ul>
         </li>
 

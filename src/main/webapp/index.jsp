@@ -8,6 +8,30 @@
 	  <title>Indian Railway Post Graduate Institute of Medical Sciences and Research</title>
 	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	  <style>
+	  .message-section {
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.msg-photo {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #0d47a1;
+}
+
+.msg-name {
+  color: #0d47a1;
+  font-size: 1.4rem;
+}
+
+.msg-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+}
 	  
 	    
 	.news-bar {
@@ -23,6 +47,7 @@
 	.modern-card {
 	  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 	  border-radius: 12px;
+	  margin-top: 40px;
 	  transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
 	
@@ -37,12 +62,18 @@
 	  object-fit: cover;
 	  border: 3px solid #004080;
 	}
-	
+	@media (max-width: 768px) {
+	 .modern-card {
+	  margin-bottom: 20px;
+	  margin-top:0px;
+	}
+	}
 	@media (max-width: 992px) {
 	  .person-img {
 	    width: 100px;
 	    height: 100px;
 	  }
+	 
 	}
 	    @media (min-width: 992px) {
 	  .col-lg-7 {
@@ -73,7 +104,7 @@
 	  margin-bottom: 0 !important;
 	}
 	 
-	li{
+	.tab-pane ul li{
 	font-weight: bold;
 	}
 	.bottom-section {
@@ -113,11 +144,6 @@
 	  border-bottom: 2px solid #0d47a1;
 	}
 	
-	.carousel-img {
-	  height: 613px; 
-	  object-fit: cover; 
-	  cursor: pointer;
-	}
 	.circle-link {
 	  text-decoration: none;
 	  color: #003366;
@@ -137,8 +163,13 @@
 	
 	.circular-links {
 	  background-color: #e8f4ff;
-	  padding-top: 2rem;
-	  padding-bottom: 2rem;
+	  padding-top: 1.5rem;
+	  border-top: 2px solid #cfe7ff;
+	  border-bottom: 2px solid #cfe7ff;
+	}
+	
+	.bottom-links {
+	  background-color: #e8f4ff;
 	  border-top: 2px solid #cfe7ff;
 	  border-bottom: 2px solid #cfe7ff;
 	}
@@ -242,8 +273,40 @@
 	  opacity: 1;
 	  
 	} */
-	    
-	    
+	    /* Shadow for all tabs */
+.nav-tabs .nav-link {
+  background-color: #e3e9f5;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px 6px 0 0;
+  margin-right: 3px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.25);   /* Raised */
+  transition: all 0.2s ease;
+}
+
+/* Hover effect (slightly more raised) */
+.nav-tabs .nav-link:hover {
+  box-shadow: 0 5px 9px rgba(0,0,0,0.30);
+}
+
+/* ACTIVE TAB — pressed look */
+.nav-tabs .nav-link.active {
+  background-color: #d7deee;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.35);  /* Pressed */
+  transform: translateY(2px);   /* Slight push-down */
+  border: none;
+  position: relative;
+  z-index: 5;
+}
+
+/* Remove bottom border of tab container */
+.nav-tabs {
+  border-bottom: none;
+}    
+	    .carousel-img {
+	    width:100%;
+	    height:40vw;
+	    }
 	    </style>
 	</head> 
 	<body>
@@ -260,9 +323,9 @@
 	  <div class="container d-flex align-items-center overflow-hidden">
 	    <strong class="me-2 flex-shrink-0 text-warning">Latest News:</strong>
 	    <marquee behavior="scroll" direction="left" scrollamount="5" class="flex-grow-1 mb-0">
-	      Latest New 1! &nbsp;&nbsp;|&nbsp;&nbsp;
-	      Latest New 2. &nbsp;&nbsp;|&nbsp;&nbsp;
-	      Latest New 3.
+	      Latest News 1! &nbsp;&nbsp;|&nbsp;&nbsp;
+	      Latest News 2. &nbsp;&nbsp;|&nbsp;&nbsp;
+	      Latest News 3.
 	    </marquee>
 	  </div>
 	</div>
@@ -270,16 +333,13 @@
 	  <!-- Carousel -->
 	  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
 	    <div class="carousel-inner">
-	    <div class="carousel-item active">
-	        <img src="/nrch/images/banner1.jpg" style="cursor:pointer;width:100%;height:613px" >
-	      </div>
 	      <!-- <div class="carousel-item">
 	        <img src="https://cbpssubscriber.mygov.in/assets/uploads/3rpbtfC38B9muoRQ?51" id="_7yCsbneY8uXMxwGe" onclick="javascript:window.open('https://cbpssubscriber.mygov.in/aff/7yCsbneY8uXMxwGe')" style="cursor:pointer;width:100%;height:auto" onload="javascript:(function(){if(typeof _done == 'undefined' || !_done){this.setAttribute('src', this.getAttribute('src')+'?'+Math.floor((Math.random() * 100) + 1)); _done=true;}}).call(this)">
 	      </div> -->
 	     
-	      <% for(int i = 1; i <= 19; i++) { %>
-			  <div class="carousel-item">
-	        <img src="/nrch/images/gallery/picture<%=i%>.png"  style="cursor:pointer;width:100%;height:613px" 
+	      <% for(int i = 1; i <= 18; i++) { %>
+			  <div class="carousel-item <%if(i==1){%>active<%}%>">
+	        <img class="carousel-img" src="/nrch/images/gallery/picture<%=i%>.png"  style="cursor:pointer;" 
 	          onerror="this.onerror=null;this.src='/nrch/images/gallery/picture<%=i%>.jpg';">
 	        
 	      </div>
@@ -296,9 +356,9 @@
 	
 
 	  <!-- ====== Circular Quick Links Section (below carousel) ====== -->
-<section class="circular-links py-4">
+<section class="circular-links">
   <div class="container text-center">
-    <div class="row justify-content-center g-4">
+    <div class="row g-4" style="justify-content: space-evenly;">
       
       <div class="col-6 col-sm-4 col-md-2">
         <a href="/nrch/nodata.jsp" class="circle-link">
@@ -328,49 +388,65 @@
         </a>
       </div>
 
-      <div class="col-6 col-sm-4 col-md-2">
-        <a href="/nrch/nodata.jsp" class="circle-link">
-          <img src="images/icon5.png" alt="Vendor">
-          <p>Vendor</p>
-        </a>
-      </div>
-
-      <div class="col-6 col-sm-4 col-md-2">
-        <a href="/nrch/nodata.jsp" class="circle-link">
-          <img src="images/visitors.png" alt="Visitor">
-          <p>Visitor</p>
-        </a>
-      </div>
-
     </div>
 	</div>
 </section>
+<section class="message-section">
+  <div class="container text-center">
 
+    <!-- Person Image -->
+    <img src="/nrch/images/mr1.png" alt="Director Image" class="msg-photo mb-3">
 
+    <!-- Name + Designation -->
+    <h4 class="msg-name fw-bold mb-1">Shri Ashwini Vaishnaw</h4>
+    <p class="msg-designation text-muted mb-3">Honourable Minister of Railways</p>
+
+    <!-- Message Content -->
+    <p class="msg-text mx-auto">
+     It is a moment of immense pride for Indian Railways to establish its first Postgraduate
+Institute of Medical Education at the Northern Railway Central Hospital, New Delhi. This
+pioneering initiative marks a major step forward in our endeavor to integrate world-class
+healthcare with advanced medical learning, reflecting our unwavering commitment to the
+well-being of the Railway family and the nation.
+    </p>
+    <p class="msg-text mx-auto">
+     The new postgraduate institute underscores Indian Railways' dedication to fostering
+excellence in medical education and healthcare delivery for its personnel and the wider
+community. It also aligns with the broader national goal of enhancing access to high-
+quality medical training and clinical services through modern, multidisciplinary and
+technologically advanced institutions.
+    </p>
+    <p class="msg-text mx-auto">
+     This milestone reaffirms our vision of building a healthier, self-reliant lndia-where lndian
+Railways continues to play a transformative role in serving society with dedication and
+purpose.
+    </p>
+
+  </div>
+</section>
+
+<section class="bottom-links">
 	  <!-- Main Content -->
 	 <!-- Notifications, Tenders, Recruitment + Important Persons Section -->
 	<div class="container my-4">
 	  <div class="row align-items-stretch">
 	    
 	    <!-- Left: Tabs Section (Wider) -->
-	    <div class="col-md-8">
+	    <div class="col-md-8 order-2 order-md-1">
 	      <ul class="nav nav-tabs" id="infoTabs" role="tablist">
-		<li class="nav-item" role="presentation">
-	          <button class="nav-link active" id="whats-new-tab" data-bs-toggle="tab" data-bs-target="#whatsNew" type="button" role="tab">What's New</button>
-	        </li>
-	        <li class="nav-item" role="presentation">
-	          <button class="nav-link" id="notifications-tab" data-bs-toggle="tab" data-bs-target="#notifications" type="button" role="tab">Notifications</button>
-	        </li>
-	        <li class="nav-item" role="presentation">
-	          <button class="nav-link" id="tenders-tab" data-bs-toggle="tab" data-bs-target="#tenders" type="button" role="tab">Tenders</button>
-	        </li>
-	        <li class="nav-item" role="presentation">
-	          <button class="nav-link" id="recruitment-tab" data-bs-toggle="tab" data-bs-target="#recruitment" type="button" role="tab">Recruitment</button>
-	        </li>
-	      </ul>
+  <li class="nav-item" role="presentation" style="background-color: #e3e9f5;border-radius: 6px 6px 0 0;">
+    <button class="nav-link active" id="whats-new-tab" data-bs-toggle="tab" data-bs-target="#whatsNew" type="button" role="tab">What's New</button>
+  </li>
+  <li class="nav-item" role="presentation" style="background-color: #e3e9f5;border-radius: 6px 6px 0 0;">
+    <button class="nav-link" id="notifications-tab" data-bs-toggle="tab" data-bs-target="#notifications" type="button" role="tab">Notifications</button>
+  </li>
+  <li class="nav-item" role="presentation" style="background-color: #e3e9f5;border-radius: 6px 6px 0 0;">
+    <button class="nav-link" id="recruitment-tab" data-bs-toggle="tab" data-bs-target="#recruitment" type="button" role="tab">Recruitment</button>
+  </li>
+</ul>
 	
 	
-	    <div class="tab-content border border-top-0 bg-white rounded-bottom" id="infoTabsContent" style="height: 450px; overflow-y: scroll;">
+	    <div class="tab-content border border-top-0 bg-white rounded-bottom" id="infoTabsContent" style="height: 280px; overflow-y: scroll;">
 		  <div class="tab-pane fade show active" id="whatsNew" role="tabpanel">
 		    <ul>
 		      <li>Sample content 1</li>
@@ -394,14 +470,6 @@
 		    </ul>
 		  </div>
 		
-		  <div class="tab-pane fade" id="tenders" role="tabpanel">
-		    <ul>
-		      <li>Sample tender 1</li>
-		      <li>Sample tender 2</li>
-		      <li>Sample tender 3</li>
-		    </ul>
-		  </div>
-		
 		  <div class="tab-pane fade" id="recruitment" role="tabpanel">
 		    <ul>
 		      <li>Sample recruitment 1</li>
@@ -413,19 +481,8 @@
 	    </div>
 	
 	    <!-- Right: Person Cards (Narrower) -->
-	 <div class="col-md-4">
-  <div class="card p-3 shadow-sm modern-card" style="border-radius: 12px; margin-top: 40px; height: 450px;">
-    
-	    <!-- Person 1 -->
-	    <div class="d-flex align-items-center mb-4 person-card">
-	      <div style="position: relative; margin-right: 15px;">
-	        <img src="images/ministers/Shri-Ashwini-Vaishnaw.png" class="person-img" alt="Person 1">
-	      </div>
-	      <div>
-	        <h5 class="mb-1">Shri Ashwini Vaishnaw</h5>
-	        <p class="mb-0 text-muted">Honourable Minister of Railways</p>
-	      </div>
-	    </div>
+	 <div class="col-md-4 order-1 order-md-2">
+  <div class="card p-3 shadow-sm modern-card" style="border-radius: 12px; height: 280px;">
 	
 	    <!-- Person 2 -->
 	    <div class="d-flex align-items-center mb-4 person-card">
@@ -456,6 +513,7 @@
 
   </div>
 </div>
+</section>
 
 
 	<!-- footer start-->
