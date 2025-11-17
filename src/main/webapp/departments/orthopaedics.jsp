@@ -181,7 +181,7 @@
       </p>
 
       <p>
-        <img src="https://nr.indianrailways.gov.in//uploads/images/1761042187670-Untitled design (1).png" class="img-fluid rounded my-3">
+        <img src="/nrch/images/Orthopaedics image 2.png" class="img-fluid rounded my-3">
       </p>
 
       <p>
