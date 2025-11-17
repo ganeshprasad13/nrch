@@ -361,7 +361,7 @@
     <div class="row g-4" style="justify-content: space-evenly;">
       
       <div class="col-6 col-sm-4 col-md-2">
-        <a href="/nrch/nodata.jsp" class="circle-link">
+        <a href="/nrch/faculty.jsp" class="circle-link">
           <img src="images/icon1.png" alt="Faculty">
           <p>Faculty</p>
         </a>

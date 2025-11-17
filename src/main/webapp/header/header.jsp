@@ -3,6 +3,8 @@
 <meta name="description" content="NRCH, IRPGI, IRPGIMSR, Northern Railway Central Hospital, Indian Railway Post Graduate Institute, Indian Railway Post Graduate Institute of Medical Sciences and Research">
 <!-- Date-Time Script -->
 <script src="https://cdn.userway.org/widget.js" data-account="sYnCngDBRn"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <script>
 function updateDateTime() {
   const now = new Date();
@@ -25,6 +27,8 @@ updateDateTime();
 </script>
 
 <style>
+
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -229,6 +233,63 @@ body {
     text-align: center;
   }
 }
+
+
+
+/* ------------------------------------------------------------
+   GLOBAL FONT SETTINGS — uniform font across entire website
+------------------------------------------------------------- */
+/* --------------------------------------------------
+   UNIVERSAL TYPOGRAPHY CONTROL FOR WHOLE WEBSITE
+-------------------------------------------------- */
+
+/* Base font size for all text */
+html, body {
+    font-size: 16px !important;
+    font-family: "Segoe UI", sans-serif !important;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Paragraphs, list items, table text */
+p, li, td, th, a, span, label, input, button {
+    font-size: 1rem !important;  /* 16px */
+}
+
+/* Headings */
+h1 { font-size: 2rem !important; font-weight: 700; }  /* 32px */
+h2 { font-size: 1.75rem !important; font-weight: 700; } /* 28px */
+h3 { font-size: 1.5rem !important; font-weight: 600; }  /* 24px */
+h4 { font-size: 1.25rem !important; font-weight: 600; } /* 20px */
+h5 { font-size: 1.1rem !important; font-weight: 600; }  /* 17.6px */
+h6 { font-size: 1rem !important; font-weight: 600; }     /* 16px */
+
+/* Navigation, tabs, circular links */
+.nav-link,
+.circle-link span,
+.breadcrumb,
+button {
+    font-size: 1rem !important;
+}
+
+/* Tables in inner pages */
+table {
+    font-size: 1rem !important;
+}
+
+font {
+    font-family: "Segoe UI", sans-serif !important;
+    font-size: 1rem !important;
+    color: #333 !important;
+    font-weight: normal !important;
+}
+
+font[size], font[color], font[face] {
+    all: unset !important;
+    font-family: "Segoe UI", sans-serif !important;
+    font-size: 1rem !important;
+    color: #333 !important;
+}
 </style>
 
 <!-- Top Header -->
@@ -267,10 +328,10 @@ body {
 
   <!-- Center Heading -->
   <div class="institute-name my-2">
-    <h1 class="institute-title mb-0">
+    <h4 class="institute-title mb-0">
       Indian Railway Post Graduate Institute of Medical Sciences and Research <br>
           and associated Northern Railway Central Hospital, New Delhi
-    </h1>
+    </h4>
   </div>
 
   <!-- Right Logo -->
