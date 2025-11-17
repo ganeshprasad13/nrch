@@ -359,7 +359,7 @@ font[size], font[color], font[face] {
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">About Us</a>
           <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-            <li><a class="dropdown-item" href="/nrch/nodata.jsp">Introduction</a></li>
+            <li><a class="dropdown-item" href="/nrch/aboutus.pdf">Introduction</a></li>
             <li><a class="dropdown-item" href="/nrch/mission.jsp">Vision & Mission</a></li>
             <li><a class="dropdown-item" href="/nrch/about_us/organization.jsp">About IGPGIMSR</a></li>
             <li><a class="dropdown-item" href="/nrch/about_us/aarogya.jsp">Aarogya - The Times of NRCH</a></li>

@@ -351,6 +351,10 @@ width: 100%;
         <div class="circle-bg"><span>Obstetrics & Gynaecology</span></div>
     </a>
 
+	<a href="#" id="dept-oncology" class="circle-link dept-btn" data-dept="Oncology">
+        <div class="circle-bg"><span>Oncology</span></div>
+    </a>
+    
     <a href="#" id="dept-orthopaedics" class="circle-link dept-btn" data-dept="Orthopaedics">
         <div class="circle-bg"><span>Orthopaedics</span></div>
     </a>
