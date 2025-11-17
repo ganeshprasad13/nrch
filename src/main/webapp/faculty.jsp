@@ -277,7 +277,9 @@ body {
 .dept-scroll > a:last-child {
   margin-right: 10px;
 }
-
+img{
+width: 100%;
+}
 </style>
 </head>
 
@@ -323,10 +325,6 @@ body {
 
     <a href="#" id="dept-eye" class="circle-link dept-btn" data-dept="Eye">
         <div class="circle-bg"><span>Eye</span></div>
-    </a>
-
-    <a href="#" id="dept-gastroenterology" class="circle-link dept-btn" data-dept="Gastroenterology">
-        <div class="circle-bg"><span>Gastroenterology</span></div>
     </a>
 
     <a href="#" id="dept-generaladmin" class="circle-link dept-btn" data-dept="General Administration">
@@ -407,10 +405,10 @@ body {
       <table class="faculty-table" id="faculty-table">
         <thead>
           <tr>
-            <th>Photo</th>
-            <th>Name</th>
-            <th>Designation</th>
-            <th>Department</th>
+            <th style="width: 15%;text-align:center">Photo</th>
+            <th style="text-align:center">Name</th>
+            <th style="text-align:center">Designation</th>
+            <th style="text-align:center">Department</th>
           </tr>
         </thead>
         <tbody></tbody>
@@ -873,7 +871,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	filtered.forEach(f => {
 	    console.log("ROW:", f); // final check
 
-	    tbody.innerHTML += '<tr><td>'+f.Img+'</td><td>'+f.Name+'</td><td>'+((f.Designation!=null)?f.Designation:"")+'</td><td>'+f.Department+'</td></tr>';
+	    tbody.innerHTML += '<tr><td style="text-align:center">'+f.Img+'</td><td style="text-align:center">'+f.Name+'</td><td style="text-align:center">'+((f.Designation!=null)?f.Designation:"")+'</td><td style="text-align:center">'+f.Department+'</td></tr>';
 	});
 
     document.getElementById("faculty-section").style.display = "block";
@@ -901,7 +899,7 @@ document.querySelectorAll(".dept-btn").forEach(btn => {
     filtered.forEach(f => {
         console.log("ROW:", f); // final check
 
-        tbody.innerHTML += '<tr><td>'+f.Img+'</td><td>'+f.Name+'</td><td>'+((f.Designation!=null)?f.Designation:"")+'</td><td>'+f.Department+'</td></tr>';
+        tbody.innerHTML += '<tr><td style="text-align:center">'+f.Img+'</td><td style="text-align:center">'+f.Name+'</td><td style="text-align:center">'+((f.Designation!=null)?f.Designation:"")+'</td><td style="text-align:center">'+f.Department+'</td></tr>';
     });
 
     document.getElementById("faculty-section").style.display = "block";
