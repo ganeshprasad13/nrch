@@ -301,7 +301,7 @@ body {
     <!-- Scrollable Department List -->
 <div class="dept-scroll" id="deptScroll">
 
-    <a href="#" id="dept-anaesthesia" class="circle-link dept-btn" data-dept="Anaesthesia">
+    <a href="#" id="dept-anaesthesia" class="circle-link dept-btn dept-active" data-dept="Anaesthesia">
         <div class="circle-bg"><span>Anaesthesia</span></div>
     </a>
 
@@ -317,7 +317,7 @@ body {
         <div class="circle-bg"><span>Dermatology</span></div>
     </a>
 
-    <a href="#" id="dept-ent" class="circle-link dept-btn dept-active" data-dept="ENT">
+    <a href="#" id="dept-ent" class="circle-link dept-btn" data-dept="ENT">
         <div class="circle-bg"><span>ENT</span></div>
     </a>
 
@@ -410,6 +410,7 @@ body {
             <th>Photo</th>
             <th>Name</th>
             <th>Designation</th>
+            <th>Department</th>
           </tr>
         </thead>
         <tbody></tbody>
@@ -868,11 +869,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let tbody = document.querySelector("#faculty-table tbody");
     tbody.innerHTML = "";
     
-    let filtered = facultyData.filter(f => f.Department === dept);
+    let filtered = facultyData.filter(f => f.Department === dept || (dept === "Health Unit" && f.Department.startsWith("Health Unit")));
 	filtered.forEach(f => {
 	    console.log("ROW:", f); // final check
 
-	    tbody.innerHTML += '<tr><td>'+f.Img+'</td><td>'+f.Name+'</td><td>'+f.Designation+'</td></tr>';
+	    tbody.innerHTML += '<tr><td>'+f.Img+'</td><td>'+f.Name+'</td><td>'+((f.Designation!=null)?f.Designation:"")+'</td><td>'+f.Department+'</td></tr>';
 	});
 
     document.getElementById("faculty-section").style.display = "block";
@@ -896,11 +897,11 @@ document.querySelectorAll(".dept-btn").forEach(btn => {
     let tbody = document.querySelector("#faculty-table tbody");
     tbody.innerHTML = "";
 
-    let filtered = facultyData.filter(f => f.Department === dept);
+    let filtered = facultyData.filter(f => f.Department === dept || (dept === "Health Unit" && f.Department.startsWith("Health Unit")));
     filtered.forEach(f => {
         console.log("ROW:", f); // final check
 
-        tbody.innerHTML += '<tr><td>'+f.Img+'</td><td>'+f.Name+'</td><td>'+((f.Designation!=null)?f.Designation:"")+'</td></tr>';
+        tbody.innerHTML += '<tr><td>'+f.Img+'</td><td>'+f.Name+'</td><td>'+((f.Designation!=null)?f.Designation:"")+'</td><td>'+f.Department+'</td></tr>';
     });
 
     document.getElementById("faculty-section").style.display = "block";
