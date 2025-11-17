@@ -406,11 +406,14 @@ font[size], font[color], font[face] {
           </ul>
         </li>
 
-        <!-- Research -->
+         <!-- Research -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button" data-bs-toggle="dropdown">Research</a>
           <ul class="dropdown-menu" aria-labelledby="researchDropdown">
-            
+            <li><a class="dropdown-item" href="/nrch/documents/Scientific Research Committee.pdf" target="_blank">Scientific Research Committee</a></li>
+            <li><a class="dropdown-item" href="/nrch/documents/NRCH Ethical Committee Approval Presentation Template.pdf" target="_blank">NRCH Ethical Committee Approval Presentation Template</a></li>
+            <li><a class="dropdown-item" href="/nrch/documents/IEC NRCH CONSTITUTION 2025.pdf" target="_blank">IEC NRCH CONSTITUTION 2025</a></li>
+            <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScPT1NF5FAswBC-lOCGvtb6OCfxqNKvkQKmPXBsh8DjrEO_Sg/viewform" target="_blank">Thesis / Research study protocol for IEC NRCH approval</a></li>
           </ul>
         </li>
 
