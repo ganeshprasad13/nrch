@@ -399,8 +399,8 @@ ResultSet rs = ps.executeQuery();
 while(rs.next()){
 %>
 <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/nrch/view_content.jsp?contentid=<%=rs.getString("DSM_ID") %>" id="<%=toCamelCase(rs.getString("DLC_LABEL"))%>Dropdown" role="button" data-bs-toggle="dropdown">Departments</a>
-           <ul class="dropdown-menu" aria-labelledby="<%=toCamelCase(rs.getString("DLC_LABEL"))%>Dropdown">
+         
+           
            <% String subQuery1 = "SELECT DSM_ID,DSM_PARENT,DSM_PATH,DSM_PRIORITY,DLC_LABEL FROM "+
 "(SELECT DSM_ID,DSM_PARENT, DSM_PATH, DSM_PRIORITY,DSM_STATUS FROM cms_section_management WHERE DSM_PARENT=?) as management "+
 "INNER JOIN "+
@@ -410,10 +410,15 @@ while(rs.next()){
 PreparedStatement ps1 = cn.prepareStatement(subQuery1);
 ps1.setString(1, rs.getString("DSM_ID"));
 ResultSet rs1 = ps1.executeQuery();
-while(rs1.next()){%>
+int countSub = 0;
+while(rs1.next()){ if(countSub++==0){%> <a class="nav-link dropdown-toggle" href="/nrch/view_content.jsp?contentid=<%=rs.getString("DSM_ID") %>" id="<%=toCamelCase(rs.getString("DLC_LABEL"))%>Dropdown" role="button" data-bs-toggle="dropdown"><%=rs.getString("DLC_LABEL") %></a><ul class="dropdown-menu" aria-labelledby="<%=toCamelCase(rs.getString("DLC_LABEL"))%>Dropdown"><%} %>
 		<li><a class="dropdown-item" href="/nrch/view_content.jsp?contentid=<%=rs1.getString("DSM_ID") %>"><%=rs1.getString("DLC_LABEL")%></a></li>
 <%} %>
+<%if(countSub>0){%>
            </ul>
+           <%}else{ %>
+            <a class="nav-link" href="/nrch/view_content.jsp?contentid=<%=rs.getString("DSM_ID") %>" ><%=rs.getString("DLC_LABEL") %></a>
+           <%} %>
 </li>
 <%} %>
         <!-- Departments -->
