@@ -5,11 +5,9 @@
 <%@ page import="java.util.regex.*"  %>
 <%@ page import="java.security.InvalidKeyException" %>
 <%@ page import="java.security.NoSuchAlgorithmException" %>
-<%@ page import="javax.crypto.BadPaddingException" %>
-<%@ page import="javax.crypto.Cipher" %>
-<%@ page import="javax.crypto.IllegalBlockSizeException" %>
-<%@ page import="javax.crypto.NoSuchPaddingException" %>
+<%@ page import="javax.crypto.*" %>
 <%@ page import="javax.crypto.spec.SecretKeySpec" %>
+
 
 <%@ page contentType="text/html; charset=UTF-8" %>
 <% request.setCharacterEncoding("UTF-8");%>
@@ -106,13 +104,13 @@ public static String toHexString(byte _bytes[]){
 
 public static String encrypt(String _text) throws InvalidKeyException, NoSuchAlgorithmException, 
 NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException{
-	javax.crypto.Cipher _cipher = getCipher("bb5","1860", "17a74", "213f",true);
+	Cipher _cipher = getCipher("bb5","1860", "17a74", "213f",true);
   return toHexString(_cipher.doFinal(_text.getBytes()));
  }
 
 public static String decrypt(String _text) throws IllegalBlockSizeException, BadPaddingException, 
 InvalidKeyException, NoSuchAlgorithmException, NoSuchPaddingException{
-	javax.crypto.Cipher _cipher = getCipher("bb5","1860", "17a74", "213f",false);
+	Cipher _cipher = getCipher("bb5","1860", "17a74", "213f",false);
 	String _st=new String(_cipher.doFinal(hexToByte(_text)));  
  return _st;
 }
@@ -124,7 +122,7 @@ String newurl = "http://localhost:8080/nrch/" ;
 String newurl1 = "" ; 
 String strAppPath = "http://localhost:8080/nrch/" ; 
 String strWebAppURL ="http://localhost:8080/nrch/" ; 
-String strAppRealPath = this.getServletContext().getRealPath("/");
+String strAppRealPath = application.getRealPath("/");
 java.util.Date timeconn = new java.util.Date() ;
 String strLanguage1 = "English";
 String strLanguage2 = "Hindi";

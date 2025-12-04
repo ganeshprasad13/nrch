@@ -1,5 +1,5 @@
 <%@ page trimDirectiveWhitespaces="true" %>
-<%@ page language="java" import="javax.servlet.*,java.io.*,org.apache.commons.fileupload.*,java.util.*" %>
+<%@ page language="java" import="jakarta.servlet.*,java.io.*,org.apache.commons.fileupload.*,java.util.*" %>
 <%
 if(session.getAttribute("DBAusername")== null){
 	response.sendRedirect("../index.jsp?msg=Invalid%20Session");
@@ -71,7 +71,7 @@ if(session.getAttribute("DBAusername")== null){
                     File tmpFile = new File(fileName);
                     String strFileArray[] = tmpFile.getName().split("\\\\");
                     fFileName[count] = strTime + strFileArray[strFileArray.length - 1];
-                    newFileName[count] = this.getServletContext().getRealPath("/images")
+                    newFileName[count] = application.getRealPath("/images")
                             + File.separator + strTime + strFileArray[strFileArray.length - 1];
                     path = newFileName[0];
                     item.write(new File(newFileName[count]));
@@ -102,7 +102,7 @@ if(session.getAttribute("DBAusername")== null){
         	if(rs.next()){
         		String old_file = rs.getString(1);
         		if(!old_file.trim().equals("")){
-       	    	String p = this.getServletContext().getRealPath("/images")+File.separator+old_file;
+       	    	String p = application.getRealPath("/images")+File.separator+old_file;
              	File file = new File(p);
              	 if (!file.isDirectory()){
              		file.delete();

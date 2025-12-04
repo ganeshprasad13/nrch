@@ -1,5 +1,5 @@
 
-<%@ page language="java" import="javax.servlet.*,java.util.*,java.io.*,org.apache.commons.fileupload.*" %>
+<%@ page language="java" import="jakarta.servlet.*,java.util.*,java.io.*,org.apache.commons.fileupload.*" %>
 
 <%@ include file="../../dbConn/dbInit.jsp" %>
 <%

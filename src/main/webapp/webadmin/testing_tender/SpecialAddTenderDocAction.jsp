@@ -1,5 +1,5 @@
 <%@ include file="../../dbConn/dbInit.jsp" %>
-<%@ page language="java" import="javax.servlet.*,java.io.*,org.apache.commons.fileupload.*,java.util.*" %>
+<%@ page language="java" import="jakarta.servlet.*,java.io.*,org.apache.commons.fileupload.*,java.util.*" %>
 
 <%!
 	public String formatDate(String strDate){
@@ -192,7 +192,7 @@ try {
 				File tmpFile = new File(fileName);
 				String strFileArray[] = tmpFile.getName().split("\\\\");
 				fFileName[count] = strTime+strFileArray[strFileArray.length-1];
-				newFileName[count] = this.getServletContext().getRealPath(""+Hname+"/tender") + 
+				newFileName[count] = application.getRealPath(""+Hname+"/tender") + 
 				File.separator  +strTime+strFileArray[strFileArray.length-1];
 				//out.print(newFileName + "<br/>");
 				item.write(new File(newFileName[count]));

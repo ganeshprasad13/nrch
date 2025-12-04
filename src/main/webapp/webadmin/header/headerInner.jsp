@@ -18,7 +18,7 @@ if(strSessionChk == null || strSessionChk.equals("")){
  
 <%@ page contentType="text/html; charset=UTF-8" %>
 
- <%response.sendRedirect("http://"+request.getServerName()+"/COFMOW/webadmin/index.jsp"); 
+ <%response.sendRedirect("/nrch/webadmin/index.jsp"); 
  }%>
 <%@ include file="../../dbConn/dbInit.jsp" %>
 <SCRIPT TYPE="text/javascript" LANGUAGE="javascript">

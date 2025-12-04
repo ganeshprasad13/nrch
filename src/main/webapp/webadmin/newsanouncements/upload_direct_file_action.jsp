@@ -1,4 +1,4 @@
-<%@ page language="java" import="javax.servlet.*,java.util.*,java.io.*,org.apache.commons.fileupload.*" %>
+<%@ page language="java" import="jakarta.servlet.*,java.util.*,java.io.*,org.apache.commons.fileupload.*" %>
 
 <%@ include file="../../dbConn/dbInit.jsp" %>
 <% 
@@ -73,7 +73,7 @@ try {
 				
 					
 					//out.println(strFileNameLocal + "<br/>");
-					String newFileName = this.getServletContext().getRealPath("/uploads/directcontent/") + 
+					String newFileName = application.getRealPath("/uploads/directcontent/") + 
 							File.separator + strTime + "-" +strFileNameLocal;
 					//out.println(newFileName + "<br/>");
 					

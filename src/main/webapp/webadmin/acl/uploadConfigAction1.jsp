@@ -1,4 +1,4 @@
-<%@ page language="java" import="javax.servlet.*,java.util.*,java.io.*,org.apache.commons.fileupload.*" %>
+<%@ page language="java" import="jakarta.servlet.*,java.util.*,java.io.*,org.apache.commons.fileupload.*" %>
 <%@ include file="../../dbConn/dbInit.jsp"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 
@@ -101,7 +101,7 @@ try {
 				    boolean isInMemory = item.isInMemory();
 				    long sizeInBytes = item.getSize();
 					File tmpFile = new File(fileName);
-					String newFileName = this.getServletContext().getRealPath("/template/site1/images/"+tempfile);
+					String newFileName = application.getRealPath("/template/site1/images/"+tempfile);
 					//out.println(newFileName + "<br/>");
 					strFileName = strTime + "-" + tmpFile.getName();
 					item.write(new File(newFileName));

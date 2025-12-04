@@ -1,5 +1,5 @@
 <%@ include file="../../dbConn/dbInit.jsp" %>
-<%@ page language="java" import="javax.servlet.*,java.io.*,org.apache.commons.fileupload.*,java.util.*" %>
+<%@ page language="java" import="jakarta.servlet.*,java.io.*,org.apache.commons.fileupload.*,java.util.*" %>
 
 <%!
 	public String formatDate1(String strDate,String strDate1){

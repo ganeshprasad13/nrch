@@ -1,5 +1,5 @@
 <%@ page trimDirectiveWhitespaces="true" %>
-<%@ page language="java" import="javax.servlet.*,java.io.*,org.apache.commons.fileupload.*,java.util.*" %>
+<%@ page language="java" import="jakarta.servlet.*,java.io.*,org.apache.commons.fileupload.*,java.util.*" %>
 <%
 if(session.getAttribute("DBAusername")== null){
 	response.sendRedirect("../index.jsp?msg=Invalid%20Session");
@@ -21,7 +21,7 @@ if(session.getAttribute("DBAusername")== null){
   	    rs = ps.executeQuery();
   	    if(rs.next()){
   	    	String name_pic = rs.getString(1);
-  	    	String p = this.getServletContext().getRealPath("/images")+File.separator+name_pic;
+  	    	String p = application.getRealPath("/images")+File.separator+name_pic;
         	File file = new File(p);
         	 if (!file.isDirectory()){
         		file.delete();

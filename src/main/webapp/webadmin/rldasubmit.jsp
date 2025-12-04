@@ -1,4 +1,4 @@
-<%@ page language="java" import="javax.servlet.*,java.io.*,org.apache.commons.fileupload.*,java.util.*,java.text.SimpleDateFormat,java.util.Date" %>
+<%@ page language="java" import="jakarta.servlet.*,java.io.*,org.apache.commons.fileupload.*,java.util.*,java.text.SimpleDateFormat,java.util.Date" %>
 
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ include file="../dbConn/dbInit.jsp" %>
@@ -99,7 +99,7 @@ try {
 				    long sizeInBytes = item.getSize();
 					File tmpFile = new File(fileName);
 					strFileNameLocal = tmpFile.getName();
-					String newFileName = this.getServletContext().getRealPath("/uploads/Commercial_Sites/") + 
+					String newFileName = application.getRealPath("/uploads/Commercial_Sites/") + 
 					File.separator  +strMonth+strYear+strTime+strDate+tmpFile.getName().substring(fileName.indexOf("."));
 					strFileName = strMonth+strYear+strTime+strDate+ tmpFile.getName().substring(fileName.indexOf("."));
 					item.write(new File(newFileName));

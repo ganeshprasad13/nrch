@@ -3,7 +3,7 @@ if(session.getAttribute("DBAusername")== null){
 	response.sendRedirect("../index.jsp?msg=Invalid%20Session");
 }
 %>
-<%@ page language="java" import="javax.servlet.*,java.util.*,java.io.*,org.apache.commons.fileupload.*" %>
+<%@ page language="java" import="jakarta.servlet.*,java.util.*,java.io.*,org.apache.commons.fileupload.*" %>
 <%@ include file="../../dbConn/dbInit.jsp" %>
 <%
 int fla ;
@@ -107,7 +107,7 @@ try {
 				    long sizeInBytes = item.getSize();
 					File tmpFile = new File(fileName);
 					strFileNameLocal = tmpFile.getName();
-					String newFileName = this.getServletContext().getRealPath("/bannerfile/") + 
+					String newFileName = application.getRealPath("/bannerfile/") + 
 							File.separator + strTime + "-" +tmpFile.getName();
 					//out.println(newFileName + "<br/>");
 					strFileName = strTime + "-" + tmpFile.getName();

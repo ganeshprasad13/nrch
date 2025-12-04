@@ -1,4 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="../dbConn/dbInit.jsp" %>
+<%!public static String toCamelCase(String input) {
+    StringBuilder result = new StringBuilder();
+    boolean nextUpper = false;
+
+    for (char c : input.toLowerCase().toCharArray()) {
+        if (c == ' ' || c == '-' || c == '_') {
+            nextUpper = true;
+        } else {
+            result.append(nextUpper ? Character.toUpperCase(c) : c);
+            nextUpper = false;
+        }
+    }
+    return result.toString();
+} %>
 <meta name="keywords" content="NRCH, IRPGI, IRPGIMSR, Northern Railway Central Hospital, Indian Railway Post Graduate Institute, Indian Railway Post Graduate Institute of Medical Sciences and Research">
 <meta name="description" content="NRCH, IRPGI, IRPGIMSR, Northern Railway Central Hospital, Indian Railway Post Graduate Institute, Indian Railway Post Graduate Institute of Medical Sciences and Research">
 <!-- Date-Time Script -->
@@ -243,27 +258,27 @@ body {
 -------------------------------------------------- */
 
 /* Base font size for all text */
-html, body {
+/* html, body {
     font-size: 16px !important;
     font-family: "Segoe UI", sans-serif !important;
     line-height: 1.6;
     color: #333;
 }
 
-/* Paragraphs, list items, table text */
+
 p, li, td, th, a, span, label, input, button {
-    font-size: 1rem !important;  /* 16px */
+    font-size: 1rem !important;  
 }
 
-/* Headings */
-h1 { font-size: 2rem !important; font-weight: 700; }  /* 32px */
-h2 { font-size: 1.75rem !important; font-weight: 700; } /* 28px */
-h3 { font-size: 1.5rem !important; font-weight: 600; }  /* 24px */
-h4 { font-size: 1.25rem !important; font-weight: 600; } /* 20px */
-h5 { font-size: 1.1rem !important; font-weight: 600; }  /* 17.6px */
-h6 { font-size: 1rem !important; font-weight: 600; }     /* 16px */
 
-/* Navigation, tabs, circular links */
+h1 { font-size: 2rem !important; font-weight: 700; }  
+h2 { font-size: 1.75rem !important; font-weight: 700; } 
+h3 { font-size: 1.5rem !important; font-weight: 600; } 
+h4 { font-size: 1.25rem !important; font-weight: 600; }
+h5 { font-size: 1.1rem !important; font-weight: 600; } 
+h6 { font-size: 1rem !important; font-weight: 600; }    
+
+
 .nav-link,
 .circle-link span,
 .breadcrumb,
@@ -271,7 +286,7 @@ button {
     font-size: 1rem !important;
 }
 
-/* Tables in inner pages */
+
 table {
     font-size: 1rem !important;
 }
@@ -288,7 +303,7 @@ font[size], font[color], font[face] {
     font-family: "Segoe UI", sans-serif !important;
     font-size: 1rem !important;
     color: #333 !important;
-}
+} */
 </style>
 
 <!-- Top Header -->
@@ -372,7 +387,35 @@ font[size], font[color], font[face] {
             <li><a class="dropdown-item" href="/nrch/nodata.jsp">Management</a></li>
           </ul>
         </li>
+<% String mainQuery = "SELECT DSM_ID,DSM_PARENT,DSM_PATH,DSM_PRIORITY,DLC_LABEL FROM "+
+"(SELECT DSM_ID,DSM_PARENT, DSM_PATH, DSM_PRIORITY,DSM_STATUS FROM cms_section_management WHERE DSM_PARENT=0 AND DSM_STATUS=1) as management "+
+"INNER JOIN "+
+"(SELECT DLC_DSM_ID, DLC_LABEL FROM cms_language_content) as content "+
+"ON management.DSM_ID = content.DLC_DSM_ID "+
+"ORDER BY DSM_PRIORITY"; 
+PreparedStatement ps = cn.prepareStatement(mainQuery);
+ResultSet rs = ps.executeQuery();
 
+while(rs.next()){
+%>
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/nrch/view_content.jsp?contentid=<%=rs.getString("DSM_ID") %>" id="<%=toCamelCase(rs.getString("DLC_LABEL"))%>Dropdown" role="button" data-bs-toggle="dropdown">Departments</a>
+           <ul class="dropdown-menu" aria-labelledby="<%=toCamelCase(rs.getString("DLC_LABEL"))%>Dropdown">
+           <% String subQuery1 = "SELECT DSM_ID,DSM_PARENT,DSM_PATH,DSM_PRIORITY,DLC_LABEL FROM "+
+"(SELECT DSM_ID,DSM_PARENT, DSM_PATH, DSM_PRIORITY,DSM_STATUS FROM cms_section_management WHERE DSM_PARENT=?) as management "+
+"INNER JOIN "+
+"(SELECT DLC_DSM_ID, DLC_LABEL FROM cms_language_content) as content "+
+"ON management.DSM_ID = content.DLC_DSM_ID "+
+"ORDER BY DSM_PRIORITY"; 
+PreparedStatement ps1 = cn.prepareStatement(subQuery1);
+ps1.setString(1, rs.getString("DSM_ID"));
+ResultSet rs1 = ps1.executeQuery();
+while(rs1.next()){%>
+		<li><a class="dropdown-item" href="/nrch/view_content.jsp?contentid=<%=rs1.getString("DSM_ID") %>"><%=rs1.getString("DLC_LABEL")%></a></li>
+<%} %>
+           </ul>
+</li>
+<%} %>
         <!-- Departments -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="departmentsDropdown" role="button" data-bs-toggle="dropdown">Departments</a>

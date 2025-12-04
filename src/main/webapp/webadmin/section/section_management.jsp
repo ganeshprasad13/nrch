@@ -45,8 +45,15 @@ tinymce.init({
             let formData = new FormData();
             formData.append('file', file);
 
-            fetch('/nrch/uploadFile', { method: 'POST', body: formData })
-                .then(r => r.text())
+            fetch('/nrch/uploadFile', { method: 'POST', body: formData,headers: { "X-Requested-With": "XMLHttpRequest" } })
+            	.then(response => {
+				    if (response.status === 401) {
+				        alert("Please login to upload files.");
+				        window.location.href = "/nrch/index.jsp"; // redirect user
+				        return "";
+				    }
+				    return response.text();
+				})
                 .then(url => {
                     if (meta.filetype === 'image') cb(url);
                     else cb(url, { text: file.name });
@@ -61,7 +68,9 @@ tinymce.init({
 
     // Remove TinyMCE branding
     branding: false,
-
+    relative_urls: false,
+    remove_script_host: false,
+    convert_urls: true,
     // Additional options
     menubar: true,             // show menu bar
     statusbar: true,           // show status bar
@@ -72,7 +81,6 @@ tinymce.init({
     paste_remove_spans: true,
     paste_strip_class_attributes: "all"
 });
-
 </script>
 
 <style>

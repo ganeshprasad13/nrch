@@ -1,4 +1,4 @@
-<%@ page language="java" import="javax.servlet.*,java.util.*,java.io.*,org.apache.commons.fileupload.*" %>
+<%@ page language="java" import="jakarta.servlet.*,java.util.*,java.io.*,org.apache.commons.fileupload.*" %>
 <%@ include file="../../dbConn/dbInit.jsp"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 
@@ -63,7 +63,7 @@ int count =0;
 						File tmpFile = new File(fileName);
 						String strFileArray[] = tmpFile.getName().split("\\\\");
 						fFileName[count] = strTime+strFileArray[strFileArray.length-1];
-						newFileName[count] = this.getServletContext().getRealPath("/ticker") + 
+						newFileName[count] = application.getRealPath("/ticker") + 
 						File.separator  +strTime+strFileArray[strFileArray.length-1];
 						//out.print(newFileName + "<br/>");
 						item.write(new File(newFileName[count]));

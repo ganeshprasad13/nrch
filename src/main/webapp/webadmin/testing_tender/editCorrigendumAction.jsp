@@ -1,4 +1,4 @@
-<%@ page language="java" import="javax.servlet.*,java.util.*,java.io.*,org.apache.commons.fileupload.*" %>
+<%@ page language="java" import="jakarta.servlet.*,java.util.*,java.io.*,org.apache.commons.fileupload.*" %>
 <%@ include file="../../dbConn/dbInit.jsp"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 
@@ -59,7 +59,7 @@ try {
 				    long sizeInBytes = item.getSize();
 					File tmpFile = new File(fileName);
 					strFileName = strTime + "-" + tmpFile.getName();
-					String newFileName = this.getServletContext().getRealPath("/"+Hname+"/corrigendum/"+strFileName);
+					String newFileName = application.getRealPath("/"+Hname+"/corrigendum/"+strFileName);
 					out.println(newFileName + "<br/>");
 					
 					item.write(new File(newFileName));

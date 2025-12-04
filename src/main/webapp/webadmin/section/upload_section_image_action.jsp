@@ -1,4 +1,4 @@
-<%@ page language="java" import="javax.servlet.*,java.util.*,java.io.*,org.apache.commons.fileupload.*" %>
+<%@ page language="java" import="jakarta.servlet.*,java.util.*,java.io.*,org.apache.commons.fileupload.*" %>
 
 <%@ include file="../../dbConn/dbInit.jsp" %>
 <% 
@@ -67,7 +67,7 @@ try {
 				    sizeInBytes = item.getSize();
 					File tmpFile = new File(fileName);
 					strFileNameLocal = tmpFile.getName();
-					String newFileName = this.getServletContext().getRealPath("/uploads/sectionbanner/") + 
+					String newFileName = application.getRealPath("/uploads/sectionbanner/") + 
 							File.separator + strTime + "-" +tmpFile.getName();
 					//out.println(newFileName + "<br/>");
 					strFileName = strTime + "-" + tmpFile.getName();
