@@ -323,9 +323,10 @@
 	  <div class="container d-flex align-items-center overflow-hidden">
 	    <strong class="me-2 flex-shrink-0 text-warning">Latest News:</strong>
 	    <marquee behavior="scroll" direction="left" scrollamount="5" class="flex-grow-1 mb-0">
-	      Latest News 1! &nbsp;&nbsp;|&nbsp;&nbsp;
-	      Latest News 2. &nbsp;&nbsp;|&nbsp;&nbsp;
-	      Latest News 3.
+	      <a href="/nrch/images/events/event1.png" target="_blank" style="color:white;text-decoration:none">World Diabetes Day (14.11.2025): Health Talks given in OPD Areas.</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+	      <a href="/nrch/images/events/event2.png" target="_blank" style="color:white;text-decoration:none">Children’s Day (14.11.2025).</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+	      <a href="/nrch/images/events/event3.png" target="_blank" style="color:white;text-decoration:none">Workshop conducted on Organ Transplantation by NBE on 13.11.2025.</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+	      <a href="/nrch/images/events/event4.jpg" target="_blank" style="color:white;text-decoration:none">World Cervical Cancer Elimination Day (17.11.2025).</a>
 	    </marquee>
 	  </div>
 	</div>
@@ -337,7 +338,7 @@
 	        <img src="https://cbpssubscriber.mygov.in/assets/uploads/3rpbtfC38B9muoRQ?51" id="_7yCsbneY8uXMxwGe" onclick="javascript:window.open('https://cbpssubscriber.mygov.in/aff/7yCsbneY8uXMxwGe')" style="cursor:pointer;width:100%;height:auto" onload="javascript:(function(){if(typeof _done == 'undefined' || !_done){this.setAttribute('src', this.getAttribute('src')+'?'+Math.floor((Math.random() * 100) + 1)); _done=true;}}).call(this)">
 	      </div> -->
 	     
-	      <% for(int i = 1; i <= 18; i++) { %>
+	      <% for(int i = 1; i <= 26; i++) { %>
 			  <div class="carousel-item <%if(i==1){%>active<%}%>">
 	        <img class="carousel-img" src="/nrch/images/gallery/picture<%=i%>.png"  style="cursor:pointer;" 
 	          onerror="this.onerror=null;this.src='/nrch/images/gallery/picture<%=i%>.jpg';">
@@ -360,31 +361,24 @@
   <div class="container text-center">
     <div class="row g-4" style="justify-content: space-evenly;">
       
-      <div class="col-6 col-sm-4 col-md-2">
+      <div class="col-6 col-sm-4 col-md-4">
         <a href="/nrch/faculty.jsp" class="circle-link">
           <img src="images/icon1.png" alt="Faculty">
           <p>Faculty</p>
         </a>
       </div>
 
-      <div class="col-6 col-sm-4 col-md-2">
-        <a href="/nrch/nodata.jsp" class="circle-link">
+      <div class="col-6 col-sm-4 col-md-4">
+        <a href="/nrch/patient.jsp" class="circle-link">
           <img src="images/patient.png" alt="Patient">
           <p>Patient</p>
         </a>
       </div>
 
-      <div class="col-6 col-sm-4 col-md-2">
+      <div class="col-12 col-sm-4 col-md-4">
         <a href="/nrch/nodata.jsp" class="circle-link">
           <img src="images/icon3.png" alt="Student">
           <p>Student</p>
-        </a>
-      </div>
-
-      <div class="col-6 col-sm-4 col-md-2">
-        <a href="/nrch/nodata.jsp" class="circle-link">
-          <img src="images/icon4.png" alt="Employee">
-          <p>Employee</p>
         </a>
       </div>
 
@@ -402,26 +396,28 @@
     <p class="msg-designation text-muted mb-3">Honourable Minister of Railways</p>
 
     <!-- Message Content -->
-    <p class="msg-text mx-auto">
+    <p class="msg-text mx-auto" style="text-align: justify;">
      It is a moment of immense pride for Indian Railways to establish its first Postgraduate
 Institute of Medical Education at the Northern Railway Central Hospital, New Delhi. This
 pioneering initiative marks a major step forward in our endeavor to integrate world-class
 healthcare with advanced medical learning, reflecting our unwavering commitment to the
 well-being of the Railway family and the nation.
     </p>
-    <p class="msg-text mx-auto">
+    <p class="msg-text mx-auto" style="text-align: justify;">
      The new postgraduate institute underscores Indian Railways' dedication to fostering
 excellence in medical education and healthcare delivery for its personnel and the wider
 community. It also aligns with the broader national goal of enhancing access to high-
 quality medical training and clinical services through modern, multidisciplinary and
 technologically advanced institutions.
     </p>
-    <p class="msg-text mx-auto">
+    <p class="msg-text mx-auto" style="text-align: justify;">
      This milestone reaffirms our vision of building a healthier, self-reliant lndia-where lndian
 Railways continues to play a transformative role in serving society with dedication and
 purpose.
     </p>
-
+    <div style="width:100%;text-align:right">
+    <img src="/nrch/images/mrsign.png" class="mb-3">
+</div>
   </div>
 </section>
 
@@ -449,32 +445,16 @@ purpose.
 	    <div class="tab-content border border-top-0 bg-white rounded-bottom" id="infoTabsContent" style="height: 280px; overflow-y: scroll;">
 		  <div class="tab-pane fade show active" id="whatsNew" role="tabpanel">
 		    <ul>
-		      <li>Sample content 1</li>
-		      <li>Sample content 2</li>
-		      <li>Sample content 3</li>
-		      <li>Sample content 4</li>
-		      <li>Sample content 5</li>
-		      <li>Sample content 6</li>
-		      <li>Sample content 7</li>
-		      <li>Sample content 8</li>
 		    </ul>
 		  </div>
 		
 		  <div class="tab-pane fade show" id="notifications" role="tabpanel">
 		    <ul>
-		      <li>Sample notification 1</li>
-		      <li>Sample notification 2</li>
-		      <li>Sample notification 3</li>
-		      <li>Sample notification 4</li>
-		      <li>Sample notification 5</li>
 		    </ul>
 		  </div>
 		
 		  <div class="tab-pane fade" id="recruitment" role="tabpanel">
 		    <ul>
-		      <li>Sample recruitment 1</li>
-		      <li>Sample recruitment 2</li>
-		      <li>Sample recruitment 3</li>
 		    </ul>
 		  </div>
 		</div>      

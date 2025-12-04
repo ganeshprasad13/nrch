@@ -1,0 +1,91 @@
+<link rel="stylesheet" href="css/default.css" type="text/css" media="screen"></link>
+<script language="javascript">
+	function showHidTopic(id,length){
+		for(i=0;i<length;i++){
+			if(i!=id){
+				document.getElementById(i).style.display="none";
+				document.getElementById("a_"+id).src="images/ElementPlus.jpg";
+			}
+		}
+		document.getElementById(id).style.display="";
+		document.getElementById("a_"+id).src="images/ElementMinus.jpg";
+		document.getElementById("l_"+id).onClick="showHidTopicA('"+id+"','"+length+"')";
+	}
+	function showHidTopicA(id,length){
+		for(i=0;i<length;i++){
+		
+				document.getElementById(i).style.display="none";
+				document.getElementById("a_"+id).src="images/ElementPlus.jpg";
+		
+		}
+	
+	}
+</script>
+<%
+String strCategory = "SELECT CCM_ID,IFNULL(CCM_NAME,'') CCM_NAME FROM CMS_CATEGORY_MASTER WHERE CCM_FLAG=0";
+dbBean.setQuery(strCategory);
+String rsGetCategoryList[][] = dbBean.getResultSet();
+String strTopic = "";
+String rsGetTopicList[][] = null;
+%>
+<table border="1" class="tender_font"  cellspacing="15">
+	<tr>
+		<td  valign="top">
+			<table border="0" class="tender_font"
+				<tr>
+					<td nowrap>Category List</td>
+				</tr>
+				<%
+				if(rsGetCategoryList.length>0){
+					for(int i=0;i<rsGetCategoryList.length;i++){
+						strTopic = "SELECT CTD_ID, CTD_CATEGORY, CTD_TITLE, CTD_DETAILS, CTD_REF_URL_LINK, CTD_SUNSET_DATE, CTD_NAME,";
+						strTopic += "CTD_DESIGNATION, CTD_KB_KEYWORD, CTD_FILE_NAME, CTD_ISACTIVATE,CTD_ISKNOW_BASE, CTD_ISPOST_HPAGE ";
+						strTopic += "FROM CMS_TOPIC_DETAILS WHERE CTD_CATEGORY ="+rsGetCategoryList[i][0];
+						dbBean.setQuery(strTopic);
+						rsGetTopicList = dbBean.getResultSet();
+						//out.print("NARENDRA >>>>>>"+strCategory);
+						//out.print("<br>NARENDRA >>>>>>"+strTopic);%>
+						<tr>
+							<td><a href="#" id="l_<%=i%>" onClick="showHidTopic('<%=i%>','<%=rsGetCategoryList.length%>')"><%if(rsGetTopicList.length>0){%><img src="images/ElementPlus.jpg" id="a_<%=i%>" border="0"><%}%></a><%=rsGetCategoryList[i][1]%></td>
+						</tr>
+						<tr>
+							<td>
+						<div id="<%=i%>" style="display:none">
+						<%
+							if(rsGetTopicList.length>0){
+								for(int j=0;j<rsGetTopicList.length;j++){%>
+									<table>
+													<tr>
+														<td>									
+															<a href="discussionForum.jsp?catID=<%=rsGetTopicList[j][0]%>&lang=<%=request.getParameter("lang")%>&id=<%=request.getParameter("id")%>"><%=rsGetTopicList[j][2]%></a></td>
+													</tr>
+												</table>
+											
+									
+								<%}
+							}%></div></td>										
+										</tr>
+					<%}
+				}%>
+			</table>
+		</td>
+		<td  valign="top">
+			<table border="0" class="tender_font"> 
+				<tr>
+					<td colspan="3">INSTRUCTIONS :</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="3">1. To start new discussion, Go to create topic page.</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="3">2. To post a reply, first select topic from the category list on the left side and then go to submit reply page.</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="3">3. To view any Topic, select respective topic from the category list on the left side. </td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+	
+				

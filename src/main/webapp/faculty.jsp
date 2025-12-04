@@ -280,6 +280,18 @@ body {
 img{
 width: 100%;
 }
+.table-heading th {
+    background-color: #004080 !important;
+    color: #fff !important;
+}
+.faculty-table tbody tr td {
+    font-size: 20px !important;
+}
+.faculty-table th,
+.faculty-table td {
+    vertical-align: middle !important;
+    font-size: 1rem !important;
+}
 </style>
 </head>
 
@@ -405,19 +417,18 @@ width: 100%;
   <div class="container">
     <div class="faculty-card">
       <h2 class="faculty-title" id="dept-title"></h2>
-
-      <table class="faculty-table" id="faculty-table">
-        <thead>
+<div class="table-responsive">
+      <table class="table table-bordered faculty-table" id="faculty-table">
+        <thead class="table-heading">
           <tr>
             <th style="width: 15%;text-align:center">Photo</th>
             <th style="text-align:center">Name</th>
             <th style="text-align:center">Designation</th>
-            <th style="text-align:center">Department</th>
           </tr>
         </thead>
         <tbody></tbody>
       </table>
-
+</div>
     </div>
   </div>
 </section>
@@ -874,12 +885,12 @@ document.addEventListener("DOMContentLoaded", function () {
     let filtered = facultyData.filter(f => f.Department === dept || (dept === "Health Unit" && f.Department.startsWith("Health Unit")));
 	filtered.forEach(f => {
 	    console.log("ROW:", f); // final check
-
-	    tbody.innerHTML += '<tr><td style="text-align:center">'+f.Img+'</td><td style="text-align:center">'+f.Name+'</td><td style="text-align:center">'+((f.Designation!=null)?f.Designation:"")+'</td><td style="text-align:center">'+f.Department+'</td></tr>';
+	    tbody.innerHTML += '<tr><td style="text-align:center">'+f.Img+'</td><td style="text-align:center">'+f.Name+'</td><td style="text-align:center">'+((f.Designation!=null)?f.Designation:"")+((f.Department.startsWith("Health Unit"))?" ("+f.Department.replace("Health Unit ","")+")":"")+'</td></tr>';
 	});
 
     document.getElementById("faculty-section").style.display = "block";
   }
+  fixMissingImages();
 });
 
 document.querySelectorAll(".dept-btn").forEach(btn => {
@@ -903,11 +914,12 @@ document.querySelectorAll(".dept-btn").forEach(btn => {
     filtered.forEach(f => {
         console.log("ROW:", f); // final check
 
-        tbody.innerHTML += '<tr><td style="text-align:center">'+f.Img+'</td><td style="text-align:center">'+f.Name+'</td><td style="text-align:center">'+((f.Designation!=null)?f.Designation:"")+'</td><td style="text-align:center">'+f.Department+'</td></tr>';
+        tbody.innerHTML += '<tr><td style="text-align:center">'+f.Img+'</td><td style="text-align:center">'+f.Name+'</td><td style="text-align:center">'+((f.Designation!=null)?f.Designation:"")+((f.Department.startsWith("Health Unit"))?" ("+f.Department.replace("Health Unit ","")+")":"")+'</td></tr>';
     });
 
     document.getElementById("faculty-section").style.display = "block";
     document.getElementById("faculty-section").scrollIntoView({behavior: "smooth"});
+    fixMissingImages();
   });
 });
 
@@ -921,6 +933,13 @@ document.getElementById("scrollLeft").onclick = () => {
 document.getElementById("scrollRight").onclick = () => {
   deptScroll.scrollBy({ left: scrollAmount, behavior: "smooth" });
 };
+function fixMissingImages() {
+    document.querySelectorAll("#faculty-table img").forEach(img => {
+        img.onerror = function () {
+            this.outerHTML = "N.A.";
+        };
+    });
+}
 
 
 </script>

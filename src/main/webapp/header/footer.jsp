@@ -39,3 +39,5 @@
   </div>
 
 </footer>
+
+<script src="https://translation-plugin.bhashini.co.in/v3/website_translation_utility.js" language-icon-color="white"></script>

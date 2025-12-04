@@ -163,7 +163,7 @@
     <img src="https://nr.indianrailways.gov.in//uploads/images/1761040560509-Picture7.png" class="img-fluid rounded">
 
     <h5 class="mt-4 text-primary fw-bold">Dr. Anita Bansal</h5>
-    <p>Chief Gynecologist at NRCH. An alumnus of MAMC, she completed MBBS, DGO, and DNB at NRCH. She has made significant contributions to gynecology and laparoscopic surgery and served as a trainer at Karl Storz Laparoscopic Training Centre. She also chaired the DACC, Central Delhi (2020–2023).</p>
+    <p>Chief Gynecologist at NRCH. An alumnus of MAMC, she completed MBBS, DGO, and DNB at NRCH. She has made significant contributions to gynecology and laparoscopic surgery and served as a trainer at Karl Storz Laparoscopic Training Centre. She also chaired the DACC, Central Delhi (2020-2023).</p>
 
     <h5 class="mt-4 text-primary fw-bold">Dr. Anita Chandrayan</h5>
     <p>MBBS from Patliputra Medical College, DGO from MGM Jamshedpur, DNB from NRCH. She has 19 years of experience in Railways healthcare and is a lifelong member of AOGD, FOGSI, and HSI.</p>

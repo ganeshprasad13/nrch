@@ -4,7 +4,6 @@
 <!-- Date-Time Script -->
 <script src="https://cdn.userway.org/widget.js" data-account="sYnCngDBRn"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <script>
 function updateDateTime() {
   const now = new Date();
@@ -294,11 +293,14 @@ font[size], font[color], font[face] {
 
 <!-- Top Header -->
 <div class="top-header text-center text-md-start">
-  <div class="container d-flex justify-content-between align-items-center">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center align-items-start">
     <div id="datetime"></div>
-    <a class="LangSwitcher" href="#mainCarousel" title="Skip to Main Content">
-		Skip to Main Content
-	</a>
+    <div class="d-flex align-items-center gap-3">
+        <a class="LangSwitcher" href="#mainCarousel" title="Skip to Main Content">
+            Skip to Main Content
+        </a>
+        <div class="bhashini-plugin-container"></div>
+    </div>
   </div>
 </div> 
 
@@ -359,7 +361,7 @@ font[size], font[color], font[face] {
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">About Us</a>
           <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-            <li><a class="dropdown-item" href="/nrch/aboutus.pdf">Introduction</a></li>
+            <li><a class="dropdown-item" href="/nrch/aboutus.jsp">Introduction</a></li>
             <li><a class="dropdown-item" href="/nrch/mission.jsp">Vision & Mission</a></li>
             <li><a class="dropdown-item" href="/nrch/about_us/organization.jsp">About IGPGIMSR</a></li>
             <li><a class="dropdown-item" href="/nrch/about_us/aarogya.jsp">Aarogya - The Times of NRCH</a></li>

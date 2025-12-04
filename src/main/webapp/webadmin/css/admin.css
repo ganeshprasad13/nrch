@@ -1,0 +1,158 @@
+.top_img{
+	
+	background-image:url('../images/titlebar_bg.gif');
+	background-repeat:repeat-x;
+	
+	
+	
+	
+}
+
+.left_menu
+{
+	font-family:tahoma;
+	font-size:11px;
+	color:white;
+}
+
+.left_menu a:link
+{
+	color:red;
+	text-decoration:none;
+font-family:tahoma;	
+	
+
+}
+.admin_menu_top
+{
+background-image:url('../../images/admin_menu_top.jpg');
+background-repeat:no-repeat;
+background-color:red;
+color:white;
+}
+
+.admin_menu_bottom
+{
+background-image:url('../../images/admin_menu_bottom.jpg');
+background-repeat:no-repeat;
+
+color:white;
+}
+.admin_menu_td
+{
+background-image:url('../../images/admin_menu_td.jpg');
+background-repeat:no-repeat;
+padding-left:11px;
+color:white;
+
+}
+.menu_links a:link
+{
+color:red;
+}
+.content p
+{
+
+font-size:12px;
+font-family:arial;
+}
+
+.table_border
+{
+font-family:tahoma;
+font-size:12px;
+
+
+}
+.table_border a:link
+{
+	color:white;
+	text-decoration:none;
+font-family:tahoma;
+font-size:11px;
+	
+
+}
+.table_border a:hover
+{
+	color:yellow;
+	text-decoration:none;
+}
+.table_border a:visited
+{
+	color:white;
+	text-decoration:none;
+}
+.middle_bg
+{
+background-image:url('../images/middle_bg.jpg');
+	height:40px;
+	
+}
+.right_img
+{
+background-image:url('../images/logout.jpg');
+color:white;
+text-decoration:underline;
+font-family:arial;
+font-size:12px;
+vertical-align="middle"
+	
+}
+
+.table_1
+{
+	border:1px dotted #A6D282;
+}
+.table_1 td
+{
+border-top:1px dotted #A6D282;
+}
+.admin_bg
+{
+background-image:url('../images/admin_bg.jpg');
+background-repeat:no-repeat;
+color:#2B63C4;
+font-size:12px;
+font-family:arial;
+padding-left:7px;
+padding-top:8px;
+margin-left:20px;
+
+}
+.admin_user_details
+{
+color:white;
+border-color:#126199;
+background-color:#116196;
+}
+.admin_profile
+{
+border-collapse:collapse;
+}
+.admin_manage
+{
+border-collapse:collapse;
+border-color:#116196;
+background-color:#B7D0EC;
+
+}
+.admin_bg_profile
+{
+background-color:#126199;
+color:white;
+font-weight:unbold;
+text-align:center;
+}
+.linka a
+{
+color:red;
+}
+.admin_home_td1
+{
+background-color:#126199;
+color:white;
+font-size:11px;
+font-family:tahoma;
+font-weight:bold;
+}
